@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"value": "python_datapack_summit:i/manual"
+				}
+			]
+		}
+	]
+}
+

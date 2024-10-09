@@ -2,7 +2,7 @@
 # Imports
 import os
 ROOT: str = os.path.dirname(os.path.realpath(__file__)).replace("\\", "/")	# This line gets the full root path to this folder, don't change it unless you know what you're doing.
-IGNORE_UNSET: bool = False							# If True, the program will ignore unset optionnal values in the configuration dictionnary
+IGNORE_UNSET: bool = True							# If True, the program will ignore unset optionnal values in the configuration dictionnary
 
 
 # Folders
@@ -24,24 +24,15 @@ MERGE_LIBS: bool = True								# Make new zip of merged libraries with the datap
 
 # Datapack related constants
 AUTHOR: str = "Stoupy51"				# Author(s) name(s) displayed in pack.mcmeta, also used to add convention.debug tag to the players of the same name(s) <-- showing additionnal displays like datapack loading
-DATAPACK_NAME: str = "Template"			# Name of the datapack, used for messages and items lore
+DATAPACK_NAME: str = "PythonDatapackSummit"			# Name of the datapack, used for messages and items lore
 MINECRAFT_VERSION: str = "1.21"			# Text used when loading the datapack to warn the user when the data version is not right
 DATA_VERSION: int = 3947				# Depending on MC version, given by /data get entity @p DataVersion to check if the datapack is not running in an older version of MC
-VERSION: str = "1.21.615"				# Datapack version in the following mandatory format: major.minor.patch, ex: 1.0.0 or 1.21.615
-NAMESPACE: str = "your_namespace"		# Simplified version of the datapack name. Should be the same you use in the merge folder. Used to namespace functions, tags, etc.
+VERSION: str = "1.0.0"					# Datapack version in the following mandatory format: major.minor.patch, ex: 1.0.0 or 1.21.615
+NAMESPACE: str = "python_datapack_summit"		# Simplified version of the datapack name. Should be the same you use in the merge folder. Used to namespace functions, tags, etc.
 DATAPACK_FORMAT: int = 48				# Pack format version, see https://minecraft.wiki/w/Pack_format#List_of_data_pack_formats
 RESOURCE_PACK_FORMAT: int = 34			# Resource pack format version, see https://minecraft.wiki/w/Pack_format#List_of_resource_pack_formats
 DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"	# Pack description displayed in pack.mcmeta
-DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {
-	# Automagically, the datapack will check for the presence of dependencies and their minimum required versions at runtime
-	# The url is used when the dependency is not found to suggest where to get it
-	# The version dict key contains the minimum required version of the dependency in [major, minor, patch] format
-	# The main key is the dependency namespace to check for
-	# The name can be whatever you want, it's just used in messages
-	
-	# Example for DatapackEnergy >= 1.8.0
-	#"energy": {"version":[1, 8, 0], "name":"DatapackEnergy", "url":"https://github.com/ICY105/DatapackEnergy"},
-}
+DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {}
 
 
 # Technical constants
@@ -59,7 +50,7 @@ MANUAL_NAME: str = f"{DATAPACK_NAME} Manual"		# Name of the manual, used for the
 MAX_ITEMS_PER_ROW: int = 5							# Max number of items per row in the manual, should not exceed 6
 MAX_ROWS_PER_PAGE: int = 5							# Max number of rows per page in the manual, should not exceed 6
 OPENGL_RESOLUTION: int = 256						# Resolution of the OpenGL renders used in the manual, best value is 256 <--- 256x256
-MANUAL_FIRST_PAGE_TEXT: list[dict] = [{"text":"Modify in config.py the text that will be shown in this first manual page", "color":"#505050"}]	# Text for the first page of the manual
+MANUAL_FIRST_PAGE_TEXT: list[dict] = [{"text":"Here is an example of text shown in this first manual page", "color":"#505050"}]	# Text for the first page of the manual
 
 
 

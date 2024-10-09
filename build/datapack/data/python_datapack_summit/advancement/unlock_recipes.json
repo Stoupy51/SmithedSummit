@@ -1,0 +1,11 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"rewards": {
+		"function": "python_datapack_summit:advancements/unlock_recipes"
+	}
+}
+

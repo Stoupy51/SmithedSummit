@@ -1,11 +1,10 @@
 {
 	"parent": "block/furnace",
 	"overrides": [
-		{ "predicate": { "custom_model_data": 30000}, "model": "your_namespace:block/steel_block" },
-		{ "predicate": { "custom_model_data": 30001}, "model": "your_namespace:block/steel_ore" },
-		{ "predicate": { "custom_model_data": 30002}, "model": "your_namespace:block/deepslate_steel_ore" },
-		{ "predicate": { "custom_model_data": 30003}, "model": "your_namespace:block/raw_steel_block" },
-		{ "predicate": { "custom_model_data": 30021}, "model": "your_namespace:block/super_stone" }
+		{ "predicate": { "custom_model_data": 2010000}, "model": "python_datapack_summit:block/steel_block" },
+		{ "predicate": { "custom_model_data": 2010001}, "model": "python_datapack_summit:block/steel_ore" },
+		{ "predicate": { "custom_model_data": 2010002}, "model": "python_datapack_summit:block/deepslate_steel_ore" },
+		{ "predicate": { "custom_model_data": 2010003}, "model": "python_datapack_summit:block/raw_steel_block" }
 	]
 }
 

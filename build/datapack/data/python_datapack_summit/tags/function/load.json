@@ -1,0 +1,11 @@
+{
+	"values": [
+		{
+			"id": "#python_datapack_summit:dependencies",
+			"required": false
+		},
+		"#python_datapack_summit:enumerate",
+		"#python_datapack_summit:resolve"
+	]
+}
+

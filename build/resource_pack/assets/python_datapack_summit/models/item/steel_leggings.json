@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:item/leather_leggings",
+	"textures": {
+		"layer0": "python_datapack_summit:item/steel_leggings",
+		"layer1": "python_datapack_summit:item/steel_leggings"
+	}
+}
+

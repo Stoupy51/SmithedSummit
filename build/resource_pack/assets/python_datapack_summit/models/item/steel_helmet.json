@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:item/leather_helmet",
+	"textures": {
+		"layer0": "python_datapack_summit:item/steel_helmet",
+		"layer1": "python_datapack_summit:item/steel_helmet"
+	}
+}
+

@@ -1,0 +1,9 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"python_datapack_summit.vanilla.minecraft_iron_block\"]}","location": {"block": {"blocks": "minecraft:iron_block"}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"python_datapack_summit.vanilla.minecraft_polished_deepslate\"]}","location": {"block": {"blocks": "minecraft:polished_deepslate"}}}},
+		{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Tags:[\"python_datapack_summit.vanilla.minecraft_raw_iron_block\"]}","location": {"block": {"blocks": "minecraft:raw_iron_block"}}}}
+	]
+}
+

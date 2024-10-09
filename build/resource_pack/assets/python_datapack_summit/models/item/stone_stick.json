@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "python_datapack_summit:item/stone_stick"
+	}
+}
+

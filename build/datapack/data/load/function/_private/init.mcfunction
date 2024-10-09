@@ -1,5 +1,5 @@
 
-#> your_namespace:_private/init
+#> python_datapack_summit:_private/init
 #
 # @within	???
 #
