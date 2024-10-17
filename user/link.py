@@ -16,7 +16,7 @@ def main(config: dict) -> None:
 	
 	# Remove items storage
 	write_to_load_file(config, """
-tellraw @a[tag=convention.debug] {"translate":"python_datapack_summit.loaded_pythondatapacksummit_v1_0_0","color":"green"}
+tellraw @a[tag=convention.debug] {"text":"[Loaded PythonDatapackSummit v1.0.0]","color":"green"}
 scoreboard players set #python_datapack_summit.loaded load.status 1
 """, True)
 
@@ -24,12 +24,12 @@ scoreboard players set #python_datapack_summit.loaded load.status 1
 	for lib in OFFICIAL_LIBS:
 		if lib != "smithed.custom_block":
 			OFFICIAL_LIBS[lib]["is_used"] = False
+			delete_files(lib)
 
 	# Delete all recipes and functionnal libraries calls
-	delete_files(f"{namespace}/recipe")
+	delete_files("recipe")
 	delete_files("function/calls")
-	delete_files("common_signals")
-
+	delete_files("simpledrawer")
 
 	pass
 
