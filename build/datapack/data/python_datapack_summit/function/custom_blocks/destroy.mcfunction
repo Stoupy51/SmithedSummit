@@ -1,7 +1,7 @@
 
 #> python_datapack_summit:custom_blocks/destroy
 #
-# @within	python_datapack_summit:calls/common_signals/on_ore_destroyed
+# @within	???
 #
 
 execute if score #total_vanilla_iron_block python_datapack_summit.data matches 1.. if entity @s[tag=python_datapack_summit.vanilla.minecraft_iron_block] unless block ~ ~ ~ minecraft:iron_block run function python_datapack_summit:custom_blocks/_groups/minecraft_iron_block
