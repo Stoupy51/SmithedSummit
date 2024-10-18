@@ -10,15 +10,15 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:custom_data": {
-									"smithed": {"dict": {"stick": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
-									"python_datapack_summit": {"steel_stick": true}
-								},
-								"minecraft:custom_model_data": 2010008,
-								"minecraft:item_name": "{'text': 'Steel Stick', 'italic': false, 'color': 'white'}",
+								"minecraft:custom_model_data": 2010020,
+								"minecraft:item_name": "{'text': 'None', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
 									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
-								]
+								],
+								"minecraft:custom_data": {
+									"python_datapack_summit": {"none": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								}
 							}
 						}
 					]

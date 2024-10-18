@@ -204,5 +204,13 @@
 		"custom_model_data": 2010019,
 		"item_name": "{'text': 'Stone Rod', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"]
+	},
+	"none": {
+		"id": "minecraft:command_block",
+		"override_model": {},
+		"custom_model_data": 2010020,
+		"item_name": "{'text': 'None', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"],
+		"custom_data": {"python_datapack_summit": {"none": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	}
 }

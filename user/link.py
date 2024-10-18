@@ -3,6 +3,7 @@
 from python_datapack.utils.io import *
 from python_datapack.constants import OFFICIAL_LIBS
 from user.links.text_displays import main as text_displays_main
+from user.links.setblocks import main as setblocks_main
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
 def main(config: dict) -> None:
@@ -30,8 +31,9 @@ scoreboard players set #python_datapack_summit.loaded load.status 1
 	delete_files("function/calls")
 	delete_files("simpledrawer")
 
-	# Summon text displays
+	# Summon text displays and setblock lecterns and signs
 	text_displays_main(config)
+	setblocks_main(config)
 
 	pass
 

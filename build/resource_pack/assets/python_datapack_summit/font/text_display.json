@@ -1,6 +1,6 @@
 {
 	"providers": [
-		{"type": "bitmap","file": "python_datapack_summit:text_display/icon.png","ascent": 0,"height": 40,"chars": ["\u1000"]}
+		{"type": "bitmap","file": "python_datapack_summit:text_display/icon.png","ascent": 10,"height": 64,"chars": ["\u1000"]}
 	]
 }
 

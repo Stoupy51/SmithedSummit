@@ -37,6 +37,9 @@ def main(config: dict) -> dict[str, dict]:
 	for ore in ["steel_ore","deepslate_steel_ore"]:
 		database[ore][VANILLA_BLOCK] = VANILLA_BLOCK_FOR_ORES	# Placeholder for the base block (required for custom ores)
 		database[ore][NO_SILK_TOUCH_DROP] = "raw_steel"			# Drop without silk touch (raw_steel is an item in the database)
+	
+	# Add none item
+	database["none"] = {"id": CUSTOM_ITEM_VANILLA, OVERRIDE_MODEL: {}}
 
 	# Final adjustments, you definitively should keep them!
 	deterministic_custom_model_data(config, database, STARTING_CMD, black_list = ["item_names","you_don't_want","in_that","list"])

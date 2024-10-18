@@ -15,9 +15,9 @@
 									"python_datapack_summit": {"raw_steel": true}
 								},
 								"minecraft:custom_model_data": 2010006,
-								"minecraft:item_name": "{'translate':'python_datapack_summit.raw_steel', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{'text': 'Raw Steel', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'translate':'python_datapack_summit.pythondatapacksummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

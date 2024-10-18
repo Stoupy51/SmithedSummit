@@ -15,9 +15,9 @@
 									"python_datapack_summit": {"stone_stick": true}
 								},
 								"minecraft:custom_model_data": 2010018,
-								"minecraft:item_name": "{'translate':'python_datapack_summit.stone_stick', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{'text': 'Stone Stick', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'translate':'python_datapack_summit.pythondatapacksummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

@@ -23,9 +23,9 @@
 									{"type": "generic.armor","amount": 6.5,"operation": "add_value","slot": "chest","id": "python_datapack_summit:generic.armor.chest"}
 								],
 								"minecraft:custom_model_data": 2010010,
-								"minecraft:item_name": "{'translate':'python_datapack_summit.steel_chestplate', 'italic': false, 'color': 'white'}",
+								"minecraft:item_name": "{'text': 'Steel Chestplate', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'translate':'python_datapack_summit.pythondatapacksummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}
