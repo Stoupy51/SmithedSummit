@@ -7,6 +7,9 @@
 tellraw @a[tag=convention.debug] {"text":"[Loaded PythonDatapackSummit v1.0.0]","color":"green"}
 scoreboard players set #python_datapack_summit.loaded load.status 1
 
+# New objectives
+scoreboard objectives add python_datapack_summit.block_interaction_range dummy
+
 # Display the text "welcoming_1"
 kill @e[tag=python_datapack_summit.welcoming_1,tag=python_datapack_summit]
 summon text_display 119 77 -118 {"Tags":["python_datapack_summit.welcoming_1", "python_datapack_summit"],"text":'[{"text": "Welcome to the ", "color": "gold"}, {"text": "Python Datapack", "color": "aqua"}, {"text": " Booth!"}]', "billboard": "vertical"}

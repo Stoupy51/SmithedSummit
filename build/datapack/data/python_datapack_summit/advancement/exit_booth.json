@@ -1,0 +1,47 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"location": {
+									"position": {
+										"x": {
+											"min": 107,
+											"max": 162
+										},
+										"y": {
+											"min": 53,
+											"max": 107
+										},
+										"z": {
+											"min": -134,
+											"max": -116
+										}
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"nbt": "{Tags:[\"python_datapack_summit.in_booth\"]}"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "python_datapack_summit:advancements/exit_booth"
+	}
+}
+
