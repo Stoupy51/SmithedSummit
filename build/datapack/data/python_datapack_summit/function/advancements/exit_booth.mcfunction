@@ -8,8 +8,11 @@
 advancement revoke @s only python_datapack_summit:enter_booth
 tag @s remove python_datapack_summit.in_booth
 
-# Ignore adventure players
+# Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
+
+# Clear some items
+clear @s *[custom_data~{"python_datapack_summit":{"clear_on_exit":true}}]
 
 # Modify player.block_interaction_range back to default
 data modify storage python_datapack_summit:main input set value {"value":0.0}

@@ -7,8 +7,7 @@
 		{ "predicate": { "custom_model_data": 2010007}, "model": "python_datapack_summit:item/steel_dust" },
 		{ "predicate": { "custom_model_data": 2010008}, "model": "python_datapack_summit:item/steel_stick" },
 		{ "predicate": { "custom_model_data": 2010018}, "model": "python_datapack_summit:item/stone_stick" },
-		{ "predicate": { "custom_model_data": 2010019}, "model": "python_datapack_summit:item/stone_rod" },
-		{ "predicate": { "custom_model_data": 2010020}, "model": "python_datapack_summit:item/none" }
+		{ "predicate": { "custom_model_data": 2010019}, "model": "python_datapack_summit:item/stone_rod" }
 	]
 }
 

@@ -206,11 +206,20 @@
 		"lore": ["{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"]
 	},
 	"none": {
-		"id": "minecraft:command_block",
+		"id": "minecraft:bread",
 		"override_model": {},
 		"custom_model_data": 2010020,
 		"item_name": "{'text': 'None', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"],
 		"custom_data": {"python_datapack_summit": {"none": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
+	},
+	"manual": {
+		"id": "minecraft:written_book",
+		"category": "misc",
+		"item_name": "\"PythonDatapackSummit Manual\"",
+		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"item": "minecraft:book"},{"components": {"minecraft:custom_data": {"python_datapack_summit": {"steel_ingot": true}}}}]},{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"components": {"minecraft:custom_data": {"python_datapack_summit": {"manual": true}}}}]}],
+		"custom_data": {"python_datapack_summit": {"clear_on_exit": true,"manual": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
+		"custom_model_data": 2010021,
+		"lore": ["{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"]
 	}
 }

@@ -43,7 +43,7 @@ def main(config: dict) -> None:
 
 		# How to obtain the booth stamp
 		"how_to_obtain_stamp": {
-			"position": [125, 74, -118],
+			"position": [125, 75, -118],
 			"text": [
 				{"text":"","color":"yellow"},
 				{"text":"There are ","color":"aqua"},
@@ -64,6 +64,22 @@ def main(config: dict) -> None:
 			"alignment": "left",
 			"line_width": 150,
 			"background": 1962934272,
+		},
+
+		# Special thanks
+		"special_thanks": {
+			"position": [119, 76, -131],
+			"text": [
+				{"text":"","color":"green"},
+				{"text":"Credits","color":"white","underlined":True},
+				{"text":"\\nBooth author:","color":"aqua"},
+				{"text":"\\nStoupy51","color":"yellow"},
+				{"text":"\\n\\nBuilders:","color":"aqua"},
+				{"text":"\\nJulDragonne"},
+				{"text":"\\nMizanathos"},
+				{"text":"\\nKchouky"},
+			],
+			"billboard": "vertical",
 		},
 
 		# Switch minigames

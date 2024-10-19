@@ -8,7 +8,7 @@
 advancement revoke @s only python_datapack_summit:exit_booth
 tag @s add python_datapack_summit.in_booth
 
-# Ignore adventure players
+# Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 
 # Remember previous player.block_interaction_range

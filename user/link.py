@@ -64,11 +64,20 @@ scoreboard players set #{namespace}.loaded load.status 1
 scoreboard objectives add {namespace}.block_interaction_range dummy
 """, True)
 
-	# Disable lots of libraries
+	# Disable every libraries
 	for lib in OFFICIAL_LIBS:
-		if lib != "smithed.custom_block":
-			OFFICIAL_LIBS[lib]["is_used"] = False
-			delete_files(lib)
+		OFFICIAL_LIBS[lib]["is_used"] = False
+		delete_files(lib)
+
+	# Delete all recipes and functionnal libraries calls
+	delete_files("recipe")
+	delete_files("function/calls")
+	delete_files("custom_blocks")
+	delete_files("simpledrawer")
+
+	# Summon text displays and setblock lecterns and signs
+	text_displays_main(config)
+	setblocks_main(config)
 	
 	# Advancement when entering the booth
 	enter_booth: dict = BASE_ADVANCEMENT.copy()
@@ -108,21 +117,15 @@ tag @s remove {namespace}.in_booth
 # Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 
+# Clear some items
+clear @s *[custom_data~{{"{namespace}":{{"clear_on_exit":true}}}}]
+
 # Modify player.block_interaction_range back to default
 data modify storage {namespace}:main input set value {{"value":0.0}}
 execute store result storage {namespace}:main input.value double 0.01 run scoreboard players get @s {namespace}.block_interaction_range
 function {namespace}:advancements/exit_booth_modify_range with storage {namespace}:main input
 """)
 	write_to_function(config, f"{namespace}:advancements/exit_booth_modify_range", f"$attribute @s player.block_interaction_range base set $(value)")
-
-	# Delete all recipes and functionnal libraries calls
-	delete_files("recipe")
-	delete_files("function/calls")
-	delete_files("simpledrawer")
-
-	# Summon text displays and setblock lecterns and signs
-	text_displays_main(config)
-	setblocks_main(config)
 
 	pass
 

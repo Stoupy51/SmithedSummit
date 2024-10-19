@@ -1,7 +1,7 @@
 
 #> python_datapack_summit:v1.0.0/load/confirm_load
 #
-# @within	python_datapack_summit:v1.0.0/load/valid_dependencies
+# @within	python_datapack_summit:v1.0.0/load/secondary
 #
 
 tellraw @a[tag=convention.debug] {"text":"[Loaded PythonDatapackSummit v1.0.0]","color":"green"}
@@ -20,7 +20,11 @@ summon text_display 119 76.5 -118 {"Tags":["python_datapack_summit.welcoming_2",
 
 # Display the text "how_to_obtain_stamp"
 kill @e[tag=python_datapack_summit.how_to_obtain_stamp,tag=python_datapack_summit]
-summon text_display 125 74 -118 {"Tags":["python_datapack_summit.how_to_obtain_stamp", "python_datapack_summit"],"text":'[{"text": "", "color": "yellow"}, {"text": "There are ", "color": "aqua"}, {"text": "two ways", "color": "aqua", "underlined": true}, {"text": " to obtain the booth stamp:\\n", "color": "aqua"}, {"text": "\\n- First way: find the hidden ", "color": "yellow"}, {"text": "idol", "color": "green"}, {"text": " in the booth.\\n", "color": "yellow"}, {"text": "\\n- Second way: head to the "}, {"text": "garden", "color": "green"}, {"text": " and find the cave entrance. You need to complete the "}, {"text": "mini-golf course", "color": "green"}, {"text": " to obtain the stamp."}]', "billboard": "vertical", "alignment": "left", "line_width": 150, "background": 1962934272}
+summon text_display 125 75 -118 {"Tags":["python_datapack_summit.how_to_obtain_stamp", "python_datapack_summit"],"text":'[{"text": "", "color": "yellow"}, {"text": "There are ", "color": "aqua"}, {"text": "two ways", "color": "aqua", "underlined": true}, {"text": " to obtain the booth stamp:\\n", "color": "aqua"}, {"text": "\\n- First way: find the hidden ", "color": "yellow"}, {"text": "idol", "color": "green"}, {"text": " in the booth.\\n", "color": "yellow"}, {"text": "\\n- Second way: head to the "}, {"text": "garden", "color": "green"}, {"text": " and find the cave entrance. You need to complete the "}, {"text": "mini-golf course", "color": "green"}, {"text": " to obtain the stamp."}]', "billboard": "vertical", "alignment": "left", "line_width": 150, "background": 1962934272}
+
+# Display the text "special_thanks"
+kill @e[tag=python_datapack_summit.special_thanks,tag=python_datapack_summit]
+summon text_display 119 76 -131 {"Tags":["python_datapack_summit.special_thanks", "python_datapack_summit"],"text":'[{"text": "", "color": "green"}, {"text": "Credits", "color": "white", "underlined": true}, {"text": "\\nBooth author:", "color": "aqua"}, {"text": "\\nStoupy51", "color": "yellow"}, {"text": "\\n\\nBuilders:", "color": "aqua"}, {"text": "\\nJulDragonne"}, {"text": "\\nMizanathos"}, {"text": "\\nKchouky"}]', "billboard": "vertical"}
 
 # Display the text "switch_minigames_1"
 kill @e[tag=python_datapack_summit.switch_minigames_1,tag=python_datapack_summit]
@@ -39,6 +43,7 @@ setblock 119 80 -124 air
 setblock 119 74 -131 lectern[facing=south,has_book=true,powered=false]{Book:{components:{"minecraft:written_book_content":{author:"Stoupy51",pages:[{raw:'"[Booth Plan]\\n\\n- Floor 1:\\nPython Datapack explanation\\n- Floor 2:\\nSwitch minigames\\n- Floor -1:\\nSimplEnergy showcase\\n- Garden and cave:\\nSurvisland\\n- Deep cave:\\nMinigolf course\\n"'}],resolved:1b,title:{raw:"Booth Plan"}}},count:1,id:"minecraft:written_book"},Page:0}
 
 # Set the signs
-setblock 119 80 -129 oak_sign[rotation=1]{front_text:{color:"blue",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"tellraw @s {\\"text\\":\\"Join the Switch minigames discord by clicking here!\\",\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"open_url\\",\\"value\\":\\"https://discord.com/anxzu6rA9F\\"}}"},"color":"blue","text":"Join the discord"}','{"color":"blue","text":"server here","clickEvent":{"action":"run_command","value":"playsound ui.button.click"}}','""']},is_waxed:1b}
-setblock 119 80 -124 oak_sign[rotation=7]{front_text:{color:"red",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"tellraw @s {\\"text\\":\\"Watch Switch Memories by clicking here!\\",\\"color\\":\\"red\\",\\"clickEvent\\":{\\"action\\":\\"open_url\\",\\"value\\":\\"https://www.youtube.com/watch?v=cB27sEOxboA\\"}}"},"color":"red","text":"Watch the short"}','{"color":"red","text":"video here","clickEvent":{"action":"run_command","value":"playsound ui.button.click"}}','""']},is_waxed:1b}
+setblock 119 80 -129 oak_sign[rotation=1]{front_text:{color:"blue",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"/tellraw @s {\\"text\\":\\"Join the Switch minigames discord by clicking here!\\",\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"open_url\\",\\"value\\":\\"https://discord.com/anxzu6rA9F\\"}}"},"color":"blue","text":"Join the discord"}','{"color":"blue","text":"server here","clickEvent":{"action":"run_command","value":"/playsound ui.button.click"}}','""']},is_waxed:1b}
+setblock 119 80 -124 oak_sign[rotation=7]{front_text:{color:"red",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"/tellraw @s {\\"text\\":\\"Watch Switch Memories by clicking here!\\",\\"color\\":\\"red\\",\\"clickEvent\\":{\\"action\\":\\"open_url\\",\\"value\\":\\"https://www.youtube.com/watch?v=cB27sEOxboA\\"}}"},"color":"red","text":"Watch the short"}','{"color":"red","text":"video here","clickEvent":{"action":"run_command","value":"/playsound ui.button.click"}}','""']},is_waxed:1b}
+setblock 133 62 -122 spruce_wall_sign[facing=south]{front_text:{messages:['{"text":"[Mini-Golf]","color":"aqua"}','{"text":"Start the course","color":"yellow"}','{"text":"by clicking here","color":"yellow","clickEvent":{"action":"run_command","value":"function python_datapack_summit:minigolf/_start"}}','{"text":""}']}} replace
 
