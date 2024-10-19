@@ -5,6 +5,7 @@ from python_datapack.constants import OFFICIAL_LIBS
 from user.links.text_displays import main as text_displays_main
 from user.links.setblocks import main as setblocks_main
 from user.links.advancements import main as advancements_main
+from user.links.minigolf import main as minigolf_main
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
 def main(config: dict) -> None:
@@ -34,11 +35,10 @@ scoreboard objectives add {namespace}.block_interaction_range dummy
 	delete_files("custom_blocks")
 	delete_files("simpledrawer")
 
-	# Summon text displays and setblock lecterns and signs
+	# Run the other links
 	text_displays_main(config)
 	setblocks_main(config)
 	advancements_main(config)
-	
-
+	minigolf_main(config)
 	pass
 
