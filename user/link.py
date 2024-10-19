@@ -6,7 +6,7 @@ from user.links.text_displays import main as text_displays_main
 from user.links.setblocks import main as setblocks_main
 
 # Constants
-BOOTH_LOCATION: tuple[list[int], list[int]] = ([107, 53, -134], [162, 107, -116])
+BOOTH_LOCATION: tuple[list[int], list[int]] = ([107, 53, -134], [162, 107, -115])
 BASE_ADVANCEMENT: dict = {
 	"criteria": {
 		"requirement": {
@@ -79,7 +79,7 @@ scoreboard objectives add {namespace}.block_interaction_range dummy
 advancement revoke @s only {namespace}:exit_booth
 tag @s add {namespace}.in_booth
 
-# Ignore adventure players
+# Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 
 # Remember previous player.block_interaction_range
@@ -105,7 +105,7 @@ attribute @s player.block_interaction_range base set 4.5
 advancement revoke @s only {namespace}:enter_booth
 tag @s remove {namespace}.in_booth
 
-# Ignore adventure players
+# Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 
 # Modify player.block_interaction_range back to default
