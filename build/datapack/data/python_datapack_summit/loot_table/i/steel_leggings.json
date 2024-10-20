@@ -22,10 +22,10 @@
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","amount": 5.5,"operation": "add_value","slot": "legs","id": "python_datapack_summit:generic.armor.legs"}
 								],
-								"minecraft:custom_model_data": 2010011,
+								"minecraft:custom_model_data": 2010012,
 								"minecraft:item_name": "{'text': 'Steel Leggings', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

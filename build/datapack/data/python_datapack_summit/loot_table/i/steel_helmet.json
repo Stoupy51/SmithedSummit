@@ -22,10 +22,10 @@
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","amount": 2.5,"operation": "add_value","slot": "head","id": "python_datapack_summit:generic.armor.head"}
 								],
-								"minecraft:custom_model_data": 2010009,
+								"minecraft:custom_model_data": 2010010,
 								"minecraft:item_name": "{'text': 'Steel Helmet', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

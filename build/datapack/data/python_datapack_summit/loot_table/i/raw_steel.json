@@ -14,10 +14,10 @@
 									"smithed": {"dict": {"raw": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
 									"python_datapack_summit": {"raw_steel": true}
 								},
-								"minecraft:custom_model_data": 2010006,
+								"minecraft:custom_model_data": 2010007,
 								"minecraft:item_name": "{'text': 'Raw Steel', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

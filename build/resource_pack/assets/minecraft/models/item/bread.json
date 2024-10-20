@@ -4,7 +4,7 @@
 		"layer0": "item/bread"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2010020}, "model": "python_datapack_summit:item/none" }
+		{ "predicate": { "custom_model_data": 2010000}, "model": "python_datapack_summit:item/none" }
 	]
 }
 

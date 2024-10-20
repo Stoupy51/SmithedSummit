@@ -4,7 +4,7 @@
 		"layer0": "item/iron_sword"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2010013}, "model": "python_datapack_summit:item/steel_sword" }
+		{ "predicate": { "custom_model_data": 2010014}, "model": "python_datapack_summit:item/steel_sword" }
 	]
 }
 

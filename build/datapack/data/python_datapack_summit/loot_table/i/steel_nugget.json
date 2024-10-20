@@ -14,10 +14,10 @@
 									"smithed": {"dict": {"nugget": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
 									"python_datapack_summit": {"steel_nugget": true}
 								},
-								"minecraft:custom_model_data": 2010005,
+								"minecraft:custom_model_data": 2010006,
 								"minecraft:item_name": "{'text': 'Steel Nugget', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

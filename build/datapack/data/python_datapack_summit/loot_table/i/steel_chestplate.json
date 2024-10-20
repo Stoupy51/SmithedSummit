@@ -22,10 +22,10 @@
 								"minecraft:attribute_modifiers": [
 									{"type": "generic.armor","amount": 6.5,"operation": "add_value","slot": "chest","id": "python_datapack_summit:generic.armor.chest"}
 								],
-								"minecraft:custom_model_data": 2010010,
+								"minecraft:custom_model_data": 2010011,
 								"minecraft:item_name": "{'text': 'Steel Chestplate', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

@@ -1,13 +1,14 @@
 {
 	"parent": "block/command_block",
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2010004}, "model": "python_datapack_summit:item/steel_ingot" },
-		{ "predicate": { "custom_model_data": 2010005}, "model": "python_datapack_summit:item/steel_nugget" },
-		{ "predicate": { "custom_model_data": 2010006}, "model": "python_datapack_summit:item/raw_steel" },
-		{ "predicate": { "custom_model_data": 2010007}, "model": "python_datapack_summit:item/steel_dust" },
-		{ "predicate": { "custom_model_data": 2010008}, "model": "python_datapack_summit:item/steel_stick" },
-		{ "predicate": { "custom_model_data": 2010018}, "model": "python_datapack_summit:item/stone_stick" },
-		{ "predicate": { "custom_model_data": 2010019}, "model": "python_datapack_summit:item/stone_rod" }
+		{ "predicate": { "custom_model_data": 2010005}, "model": "python_datapack_summit:item/steel_ingot" },
+		{ "predicate": { "custom_model_data": 2010006}, "model": "python_datapack_summit:item/steel_nugget" },
+		{ "predicate": { "custom_model_data": 2010007}, "model": "python_datapack_summit:item/raw_steel" },
+		{ "predicate": { "custom_model_data": 2010008}, "model": "python_datapack_summit:item/steel_dust" },
+		{ "predicate": { "custom_model_data": 2010009}, "model": "python_datapack_summit:item/steel_stick" },
+		{ "predicate": { "custom_model_data": 2010019}, "model": "python_datapack_summit:item/stone_stick" },
+		{ "predicate": { "custom_model_data": 2010020}, "model": "python_datapack_summit:item/stone_rod" },
+		{ "predicate": { "custom_model_data": 2010021}, "model": "python_datapack_summit:item/pendant" }
 	]
 }
 

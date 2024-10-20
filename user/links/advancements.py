@@ -48,7 +48,7 @@ def main(config: dict) -> None:
 	advancements_path: str = f"{config['build_datapack']}/data/{namespace}/advancement"
 
 	# Advancement when entering the booth
-	enter_booth: dict = BASE_ADVANCEMENT.copy()
+	enter_booth: dict = json.loads(json.dumps(BASE_ADVANCEMENT))
 	enter_booth["rewards"]["function"] = f"{namespace}:advancements/enter_booth"
 	write_to_file(f"{advancements_path}/enter_booth.json", super_json_dump(enter_booth, max_level=-1))
 	write_to_function(config, f"{namespace}:advancements/enter_booth", f"""
@@ -67,7 +67,7 @@ attribute @s player.block_interaction_range base set 4.5
 """)
 	
 	# Advancement when exiting the booth
-	exit_booth: dict = BASE_ADVANCEMENT.copy()
+	exit_booth: dict = json.loads(json.dumps(BASE_ADVANCEMENT))
 	first_player_condition: dict = exit_booth["criteria"]["requirement"]["conditions"]["player"][0].copy()
 	exit_booth["rewards"]["function"] = f"{namespace}:advancements/exit_booth"
 	exit_booth["criteria"]["requirement"]["conditions"]["player"][0]["term"] = first_player_condition.copy()
@@ -94,6 +94,24 @@ execute store result storage {namespace}:main input.value double 0.01 run scoreb
 function {namespace}:advancements/exit_booth_modify_range with storage {namespace}:main input
 """)
 	write_to_function(config, f"{namespace}:advancements/exit_booth_modify_range", f"$attribute @s player.block_interaction_range base set $(value)")
+
+	# Inventory changed advancement in the booth
+	inventory_changed: dict = json.loads(json.dumps(BASE_ADVANCEMENT))
+	inventory_changed["criteria"]["requirement"]["trigger"] = "minecraft:inventory_changed"
+	inventory_changed["rewards"]["function"] = f"{namespace}:advancements/inventory_changed"
+	write_to_file(f"{advancements_path}/inventory_changed.json", super_json_dump(inventory_changed, max_level=-1))
+	write_to_function(config, f"{namespace}:advancements/inventory_changed", f"""
+# Revoke advancement
+advancement revoke @s only {namespace}:inventory_changed
+
+# If the player has the pendant, grant the booth stamp
+scoreboard players set #nb_pendants {namespace}.data 0
+execute store result score #nb_pendants {namespace}.data if items entity @s container.* *[custom_data~{{{namespace}:{{pendant:1b}}}}]
+execute if score #nb_pendants {namespace}.data matches 1.. run advancement grant @s only smithed_passport:visit_booth/python_datapack
+
+# If more than 1 pendant, clear them
+execute if score #nb_pendants {namespace}.data matches 2.. run clear @s *[custom_data~{{{namespace}:{{pendant:1b}}}}] 1
+""")
 
 	pass
 

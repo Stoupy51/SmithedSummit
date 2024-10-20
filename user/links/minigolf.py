@@ -199,7 +199,7 @@ execute unless data storage {namespace}:minigolf ranking run function {namespace
 kill @e[tag={namespace}.minigolf_display]
 
 # Display the minigolf display
-summon text_display 131 61 -122 {{billboard:"fixed",alignment:"left",line_width:350,transformation:{TRANSFORMATION},text:'{DISPLAY_TEXT}',Tags:["{namespace}.minigolf_display","{namespace}","smithed.entity","smithed.strict","global.ignore","global.ignore.strict"]}}
+summon text_display 131 61 -122 {{billboard:"fixed",alignment:"left",line_width:350,background:1962934272,transformation:{TRANSFORMATION},text:'{DISPLAY_TEXT}',Tags:["{namespace}.minigolf_display","{namespace}","smithed.entity","smithed.strict","global.ignore","global.ignore.strict"]}}
 """)
 
 	pass

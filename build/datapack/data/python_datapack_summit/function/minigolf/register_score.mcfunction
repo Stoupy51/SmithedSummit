@@ -4,6 +4,9 @@
 # @within	python_datapack_summit:minigolf/finish with storage python_datapack_summit:minigolf input
 #
 
+# Grant booth stamp
+advancement grant @s only smithed_passport:visit_booth/python_datapack
+
 # If player is not in the database, add it
 $execute unless data storage python_datapack_summit:minigolf ranking[{name:"$(name)"}] run data modify storage python_datapack_summit:minigolf ranking append value {name:"$(name)",score:2024,time:0.0,time_str:"0.0"}
 

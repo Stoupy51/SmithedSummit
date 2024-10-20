@@ -39,8 +39,9 @@ def main(config: dict) -> dict[str, dict]:
 		database[ore][VANILLA_BLOCK] = VANILLA_BLOCK_FOR_ORES	# Placeholder for the base block (required for custom ores)
 		database[ore][NO_SILK_TOUCH_DROP] = "raw_steel"			# Drop without silk touch (raw_steel is an item in the database)
 	
-	# Add none item
+	# Add a few items
 	database["none"] = {"id": "minecraft:bread", OVERRIDE_MODEL: {}, "custom_model_data": 2010000}	# Custom model data in golf ball datapack
+	database["pendant"] = {"id":CUSTOM_ITEM_VANILLA, "category":"misc", "max_stack_size":1, "lore":['{"text":"Immunity idol","color":"gold","italic":false}']}
 
 	# Add a recipe for the future generated manual (the manual recipe will show up in itself)
 	manual_name: str = config.get("manual_name", "Manual")

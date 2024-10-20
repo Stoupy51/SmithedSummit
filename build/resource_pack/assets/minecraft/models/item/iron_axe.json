@@ -4,7 +4,7 @@
 		"layer0": "item/iron_axe"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2010015}, "model": "python_datapack_summit:item/steel_axe" }
+		{ "predicate": { "custom_model_data": 2010016}, "model": "python_datapack_summit:item/steel_axe" }
 	]
 }
 

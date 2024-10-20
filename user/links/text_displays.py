@@ -6,6 +6,8 @@ from python_datapack.utils.io import *
 CONVENTION_TAGS: list[str] = ["smithed.entity","smithed.strict","global.ignore","global.ignore.strict"]
 CUSTOM_FONTS: dict[str,str] = {
 	"icon": r"\u1000",
+	"switch_icon": r"\u1001",
+	"survisland_icon": r"\u1002",
 }
 
 # Main function to place the text displays
@@ -16,10 +18,14 @@ def main(config: dict) -> None:
 	# Make the fonts
 	write_to_file(f"{config['build_resource_pack']}/assets/{namespace}/font/text_display.json", super_json_dump({
 		"providers": [
-			{"type":"bitmap","file":"python_datapack_summit:text_display/icon.png","ascent":10,"height":64,"chars":[CUSTOM_FONTS["icon"]]}
+			{"type":"bitmap","file":"python_datapack_summit:text_display/icon.png",				"ascent":10,"height":64,"chars":[CUSTOM_FONTS["icon"]]},
+			{"type":"bitmap","file":"python_datapack_summit:text_display/switch_icon.png",		"ascent":10,"height":64,"chars":[CUSTOM_FONTS["switch_icon"]]},
+			{"type":"bitmap","file":"python_datapack_summit:text_display/survisland_icon.png",	"ascent":10,"height":64,"chars":[CUSTOM_FONTS["survisland_icon"]]},
 		]
 	}).replace("\\\\", "\\"))
 	super_copy(f"{assets_folder}/original_icon.png", f"{config['build_resource_pack']}/assets/{namespace}/textures/text_display/icon.png")
+	super_copy(f"{assets_folder}/switch_icon.png", f"{config['build_resource_pack']}/assets/{namespace}/textures/text_display/switch_icon.png")
+	super_copy(f"{assets_folder}/survisland_icon.png", f"{config['build_resource_pack']}/assets/{namespace}/textures/text_display/survisland_icon.png")
 
 	# Text displays
 	TEXT_DISPLAYS: dict[str, dict] = {
@@ -31,6 +37,7 @@ def main(config: dict) -> None:
 				{"text":" Booth!"},
 			],
 			"billboard": "vertical",
+			"alignment": "center",
 		},
 		"welcoming_2": {
 			"position": [119, 76.5, -118],
@@ -39,6 +46,8 @@ def main(config: dict) -> None:
 			],
 			"background": 0,
 			"billboard": "vertical",
+			"alignment": "center",
+			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.04f,0.0f,0.0f],scale:[1.0f,1.0f,1.0f]}"
 		},
 
 		# How to obtain the booth stamp
@@ -80,6 +89,7 @@ def main(config: dict) -> None:
 				{"text":"\\nKchouky"},
 			],
 			"billboard": "vertical",
+			"alignment": "center",
 		},
 
 		# Switch minigames
@@ -121,6 +131,17 @@ def main(config: dict) -> None:
 			"background": 1962934272,
 			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.5f,0.15f,-0.45f],scale:[0.55f,0.55f,0.55f]}"
 		},
+		"switch_minigames_2": {
+			"position": [120, 83, -127],
+			"text": [
+				{"text":CUSTOM_FONTS["switch_icon"],"color":"white","font":f"{namespace}:text_display"},
+			],
+			"background": 0,
+			"billboard": "fixed",
+			"alignment": "center",
+			"Rotation": [90.0, 0.0],
+			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.46f,1.25f,-0.45f],scale:[1.0f,1.0f,1.0f]}"
+		}
 	}
 
 	# Add the text displays

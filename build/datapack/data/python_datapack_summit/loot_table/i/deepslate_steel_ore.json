@@ -14,10 +14,10 @@
 									"smithed": {"dict": {"block": {"steel": true},"ore": {"steel": true}},"ignore": {"functionality": true,"crafting": true}},
 									"python_datapack_summit": {"deepslate_steel_ore": true}
 								},
-								"minecraft:custom_model_data": 2010002,
+								"minecraft:custom_model_data": 2010003,
 								"minecraft:item_name": "{'text': 'Deepslate Steel Ore', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								],
 								"minecraft:container": [
 									{"slot": 0,"item": {"id": "minecraft:stone","count": 1,"components": {"minecraft:custom_data": {"smithed": {"block": {"id": "python_datapack_summit:deepslate_steel_ore","from": "python_datapack_summit"}}}}}}

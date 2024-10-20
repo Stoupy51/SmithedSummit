@@ -5,7 +5,7 @@
 		"layer1": "item/leather_leggings_overlay"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2010011}, "model": "python_datapack_summit:item/steel_leggings" }
+		{ "predicate": { "custom_model_data": 2010012}, "model": "python_datapack_summit:item/steel_leggings" }
 	]
 }
 

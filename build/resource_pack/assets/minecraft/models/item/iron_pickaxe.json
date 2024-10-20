@@ -4,7 +4,7 @@
 		"layer0": "item/iron_pickaxe"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2010014}, "model": "python_datapack_summit:item/steel_pickaxe" }
+		{ "predicate": { "custom_model_data": 2010015}, "model": "python_datapack_summit:item/steel_pickaxe" }
 	]
 }
 

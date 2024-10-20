@@ -14,10 +14,10 @@
 									"smithed": {"dict": {"stick": {"stone": true}},"ignore": {"functionality": true,"crafting": true}},
 									"python_datapack_summit": {"stone_stick": true}
 								},
-								"minecraft:custom_model_data": 2010018,
+								"minecraft:custom_model_data": 2010019,
 								"minecraft:item_name": "{'text': 'Stone Stick', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}

@@ -1,0 +1,32 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:lore": [
+									"{\"text\":\"Immunity idol\",\"color\":\"gold\",\"italic\":false}",
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:custom_model_data": 2010021,
+								"minecraft:item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}",
+								"minecraft:custom_data": {
+									"python_datapack_summit": {"pendant": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

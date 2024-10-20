@@ -4,7 +4,7 @@
 		"layer0": "item/iron_shovel"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 2010016}, "model": "python_datapack_summit:item/steel_shovel" }
+		{ "predicate": { "custom_model_data": 2010017}, "model": "python_datapack_summit:item/steel_shovel" }
 	]
 }
 

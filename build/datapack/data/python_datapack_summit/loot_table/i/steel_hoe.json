@@ -20,10 +20,10 @@
 									{"type": "generic.attack_speed","amount": -1.0,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:generic.attack_speed.mainhand"},
 									{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:player.mining_efficiency.mainhand"}
 								],
-								"minecraft:custom_model_data": 2010017,
+								"minecraft:custom_model_data": 2010018,
 								"minecraft:item_name": "{'text': 'Steel Hoe', 'italic': false, 'color': 'white'}",
 								"minecraft:lore": [
-									"{'text': 'PythonDatapackSummit', 'italic': true, 'color': 'blue'}"
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
 								]
 							}
 						}
