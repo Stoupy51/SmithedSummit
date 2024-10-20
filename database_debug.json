@@ -218,6 +218,7 @@
 		"category": "misc",
 		"max_stack_size": 1,
 		"lore": ["{\"text\":\"Immunity idol\",\"color\":\"gold\",\"italic\":false}","{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],
+		"wiki_components": [{"text": "This pendent is a hidden immunity idol.\nFind it to get the booth stamp!","color": "gray"}],
 		"custom_model_data": 2010021,
 		"item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}",
 		"custom_data": {"python_datapack_summit": {"pendant": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}

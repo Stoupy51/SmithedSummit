@@ -614,7 +614,9 @@
 		"\\u0021\\u0021",
 		{"text": "\\u0020\\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"max_stack_size": 1,"lore": ["{\"text\":\"Immunity idol\",\"color\":\"gold\",\"italic\":false}","{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],"custom_model_data": 2010021,"item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}"}}},"clickEvent": {"action": "change_page","value": "27"}},
 		"\\u0021\\u0021",
-		{"text": "\\u0020\\u0020\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"max_stack_size": 1,"lore": ["{\"text\":\"Immunity idol\",\"color\":\"gold\",\"italic\":false}","{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],"custom_model_data": 2010021,"item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}"}}},"clickEvent": {"action": "change_page","value": "27"}}
+		{"text": "\\u0020\\u0020\n\n","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"max_stack_size": 1,"lore": ["{\"text\":\"Immunity idol\",\"color\":\"gold\",\"italic\":false}","{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],"custom_model_data": 2010021,"item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}"}}},"clickEvent": {"action": "change_page","value": "27"}},
+		{"text": "\\u0026\n","hoverEvent": {"action": "show_text","contents": {"text": "This pendent is a hidden immunity idol.\nFind it to get the booth stamp!","color": "gray"}}},
+		{"text": "\\u0025\\u0023\\u0023","hoverEvent": {"action": "show_text","contents": {"text": "This pendent is a hidden immunity idol.\nFind it to get the booth stamp!","color": "gray"}}}
 	],
 	[
 		{"text": "","font": "python_datapack_summit:manual","color": "white"},

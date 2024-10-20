@@ -97,7 +97,8 @@ def main(config: dict) -> None:
 			"position": [120, 80, -127],
 			"text": [
 				{"text":"","color":"aqua"},
-				"Switch minigames is a ",
+				{"text":"[Switch minigames]","color":"gold"},
+				" is a ",
 				{"text":"democratic","color":"green"},
 				" Minecraft server (started on August 23, 2022) like a infinite party-games",
 				" where players can vote between ",
@@ -141,6 +142,51 @@ def main(config: dict) -> None:
 			"alignment": "center",
 			"Rotation": [90.0, 0.0],
 			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.46f,1.25f,-0.45f],scale:[1.0f,1.0f,1.0f]}"
+		},
+
+		# Survisland
+		"survisland_1": {
+			"position": [139, 71, -122],
+			"text": [
+				{"text":"","color":"aqua"},
+				{"text":"[Survisland]","color":"gold"},
+				" is a french event server based on",
+				{"text":"\\nthe "},
+				{"text":"TV show Survivor","color":"green"},
+				". At this date, we have organized 20 seasons (for around 350 unique players).",
+				{"text":"\\n\\n"},
+				"Players are ",
+				{"text":"divided into tribes","color":"yellow"},
+				" and must survive on a deserted island. They must build shelters, find food,",
+				" and compete in challenges in order to ",
+				{"text":"win immunity","color":"green"},
+				". The losing tribe must face the ",
+				{"text":"Tribal Council","color":"green"},
+				" (read the lectern in the cave for more information).",
+				{"text":"\\n\\n"},
+				"Showcasing this project here is ",
+				{"text":"pretty hard","color":"yellow"},
+				" because technical features are ",
+				{"text":"few","color":"yellow"},
+				". I take this opportunity to say that"
+				" if you are interested in the concept and speak french, ",
+				{"text":"Stoupy51 (or stoupy)","color":"green"},
+				" on discord!",
+			],
+			"billboard": "vertical",
+			"alignment": "left",
+			"line_width": 275,
+			"background": 1962934272,
+			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0.0f],scale:[0.75f,0.75f,0.75f]}"
+		},
+		"survisland_2": {
+			"position": [139, 70.5, -122],
+			"text": [
+				{"text":CUSTOM_FONTS["survisland_icon"],"color":"white","font":f"{namespace}:text_display"},
+			],
+			"background": 0,
+			"billboard": "vertical",
+			"alignment": "center",
 		}
 	}
 

@@ -41,7 +41,10 @@ def main(config: dict) -> dict[str, dict]:
 	
 	# Add a few items
 	database["none"] = {"id": "minecraft:bread", OVERRIDE_MODEL: {}, "custom_model_data": 2010000}	# Custom model data in golf ball datapack
-	database["pendant"] = {"id":CUSTOM_ITEM_VANILLA, "category":"misc", "max_stack_size":1, "lore":['{"text":"Immunity idol","color":"gold","italic":false}']}
+	database["pendant"] = {
+		"id":CUSTOM_ITEM_VANILLA, "category":"misc", "max_stack_size":1, "lore":['{"text":"Immunity idol","color":"gold","italic":false}'],
+		WIKI_COMPONENTS: [{"text":"This pendent is a hidden immunity idol.\nFind it to get the booth stamp!","color":"gray"}],
+	}
 
 	# Add a recipe for the future generated manual (the manual recipe will show up in itself)
 	manual_name: str = config.get("manual_name", "Manual")
