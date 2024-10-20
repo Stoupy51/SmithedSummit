@@ -15,7 +15,6 @@ scoreboard objectives add python_datapack_summit.minigolf_time dummy
 kill @e[tag=python_datapack_summit]
 
 # Place the electric brewing stand
-kill @e[tag=python_datapack_summit.electric_brewing_stand]
 setblock 123 69 -123 air
 summon item_display 123 69.5 -123 {item:{id:"minecraft:furnace",count:1,components:{"minecraft:custom_model_data":2010026}},Tags:["python_datapack_summit.electric_brewing_stand","python_datapack_summit"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.01f,0.0f],scale:[1.002f,1.025f,1.002f]}}
 setblock 123 69 -123 brewing_stand{Lock:"uwu"}
@@ -35,7 +34,6 @@ fill 119 69 -131 120 69 -131 rail[shape=east_west]
 fill 115 69 -122 114 69 -122 rail[shape=east_west]
 
 # Place the blocks
-kill @e[tag=python_datapack_summit.stiched_texture]
 summon item_display 117.0 76 -128.0 {item:{id:"minecraft:command_block",count:1,components:{"minecraft:custom_model_data":2010024}},Tags:["python_datapack_summit.stiched_texture","python_datapack_summit"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.01f,0.0f],scale:[16.000f,16.000f,16.000f]}}
 
 # Display the text "welcoming_1"

@@ -12,7 +12,6 @@ def main(config: dict) -> None:
 	electric_brewing_stand: dict = database["electric_brewing_stand"]
 	write_to_load_file(config, f"""
 # Place the electric brewing stand
-kill @e[tag={namespace}.electric_brewing_stand]
 setblock 123 69 -123 air
 summon item_display 123 69.5 -123 {{item:{{id:"{electric_brewing_stand["id"]}",count:1,components:{{"minecraft:custom_model_data":{electric_brewing_stand["custom_model_data"]}}}}},Tags:["{namespace}.electric_brewing_stand","{namespace}"],Rotation:[180.0f,0.0f],transformation:{{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.01f,0.0f],scale:[1.002f,1.025f,1.002f]}}}}
 setblock 123 69 -123 brewing_stand{{Lock:"uwu"}}
@@ -45,7 +44,6 @@ fill 115 69 -122 114 69 -122 rail[shape=east_west]
 	stiched_texture: dict = database["stiched_texture"]
 	write_to_load_file(config, f"""
 # Place the blocks
-kill @e[tag={namespace}.stiched_texture]
 summon item_display 117.0 76 -128.0 {{item:{{id:"{stiched_texture["id"]}",count:1,components:{{"minecraft:custom_model_data":{stiched_texture["custom_model_data"]}}}}},Tags:["{namespace}.stiched_texture","{namespace}"],transformation:{{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.01f,0.0f],scale:[16.000f,16.000f,16.000f]}}}}
 """)
 
