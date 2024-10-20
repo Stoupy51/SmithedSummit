@@ -27,6 +27,9 @@ scoreboard objectives add {namespace}.minigolf_time dummy
 
 # Remove the previous entities
 kill @e[tag={namespace}]
+
+# Summon bananier
+summon sheep 137 61 -128 {{Rotation:[-18.0f,-9.0f],Silent:1b,Invulnerable:1b,DeathLootTable:"empty",NoAI:1b,Color:15b,CustomName:'"Bananier"',Tags:["{namespace}.bananier","{namespace}","smithed.entity","smithed.strict","global.ignore","global.ignore.strict"]}}
 """, True)
 
 	# Disable every libraries

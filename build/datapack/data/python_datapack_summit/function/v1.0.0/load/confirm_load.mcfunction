@@ -14,6 +14,9 @@ scoreboard objectives add python_datapack_summit.minigolf_time dummy
 # Remove the previous entities
 kill @e[tag=python_datapack_summit]
 
+# Summon bananier
+summon sheep 137 61 -128 {Rotation:[-18.0f,-9.0f],Silent:1b,Invulnerable:1b,DeathLootTable:"empty",NoAI:1b,Color:15b,CustomName:'"Bananier"',Tags:["python_datapack_summit.bananier","python_datapack_summit","smithed.entity","smithed.strict","global.ignore","global.ignore.strict"]}
+
 # Place the electric brewing stand
 setblock 123 69 -123 air
 summon item_display 123 69.5 -123 {item:{id:"minecraft:furnace",count:1,components:{"minecraft:custom_model_data":2010026}},Tags:["python_datapack_summit.electric_brewing_stand","python_datapack_summit"],Rotation:[180.0f,0.0f],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.01f,0.0f],scale:[1.002f,1.025f,1.002f]}}
