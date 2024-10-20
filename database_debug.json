@@ -239,6 +239,7 @@
 	},
 	"stiched_texture": {
 		"id": "minecraft:command_block",
+		"override_model": {"textures": {"0": "python_datapack_summit:item/stiched_texture"},"elements": [{"from": [0,0,8],"to": [16,16,8],"rotation": {"angle": 0,"axis": "y","origin": [0,0,6]},"faces": {"north": {"uv": [16,0,0,16],"texture": "#0"},"south": {"uv": [0,0,16,16],"texture": "#0"}}}]},
 		"custom_model_data": 2010024,
 		"item_name": "{'text': 'Stiched Texture', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],

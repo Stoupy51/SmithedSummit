@@ -47,7 +47,20 @@ def main(config: dict) -> dict[str, dict]:
 	}
 	database["word_cloud"] = {"id": CUSTOM_ITEM_VANILLA}
 	database["word_cloud_background"] = {"id": CUSTOM_ITEM_VANILLA}
-	database["stiched_texture"] = {"id": CUSTOM_ITEM_VANILLA}
+	database["stiched_texture"] = {"id": CUSTOM_ITEM_VANILLA, OVERRIDE_MODEL: {
+		"textures": {"0": f"{namespace}:item/stiched_texture"},
+		"elements": [
+			{
+				"from": [0, 0, 8],
+				"to": [16, 16, 8],
+				"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 6]},
+				"faces": {
+					"north": {"uv": [16, 0, 0, 16], "texture": "#0"},
+					"south": {"uv": [0, 0, 16, 16], "texture": "#0"}
+				}
+			}
+		]
+	}}
 
 	# Add a recipe for the future generated manual (the manual recipe will show up in itself)
 	database["manual"] = {

@@ -42,7 +42,7 @@ SOURCE_LORE: list[dict] = [{"text": "Python Datapack","italic":True,"color":"blu
 # Manual configuration
 DEBUG_MODE: bool = False							# Shows up grids in manual
 MANUAL_PATH: str = f"{ROOT}/manual"					# Cached manual assets
-MANUAL_HIGH_RESOLUTION: bool = True					# Enable the high resolution for the manual to increase the craft resolutions
+MANUAL_HIGH_RESOLUTION: bool = False					# Enable the high resolution for the manual to increase the craft resolutions
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
 CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual and the images (manual/pages/*.png)
 MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes
