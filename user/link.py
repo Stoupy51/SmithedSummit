@@ -6,6 +6,7 @@ from user.links.text_displays import main as text_displays_main
 from user.links.setblocks import main as setblocks_main
 from user.links.advancements import main as advancements_main
 from user.links.minigolf import main as minigolf_main
+from user.links.simplenergy import main as simplenergy_main
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
 def main(config: dict) -> None:
@@ -23,6 +24,9 @@ scoreboard players set #{namespace}.loaded load.status 1
 # New objectives
 scoreboard objectives add {namespace}.block_interaction_range dummy
 scoreboard objectives add {namespace}.minigolf_time dummy
+
+# Remove the previous entities
+kill @e[tag={namespace}]
 """, True)
 
 	# Disable every libraries
@@ -37,6 +41,7 @@ scoreboard objectives add {namespace}.minigolf_time dummy
 	delete_files("simpledrawer")
 
 	# Run the other links
+	simplenergy_main(config)
 	text_displays_main(config)
 	setblocks_main(config)
 	advancements_main(config)

@@ -109,10 +109,10 @@
 		{"text": "Misc\n","font": "minecraft:default","color": "black","underlined": true},
 		"\\u0022\\u1025\n\\u0022",
 		{"text": "\\u0024\\u8049","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"custom_model_data": 2010021,"item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}"}}},"clickEvent": {"action": "change_page","value": "27"}},
-		{"text": "\\u0024\\u804b\n","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"custom_model_data": 2010022,"item_name": "\"PythonDatapackSummit Manual\""}}},"clickEvent": {"action": "change_page","value": "28"}},
+		{"text": "\\u0024\\u804b\n","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"custom_model_data": 2010025,"item_name": "\"Python Datapack example manual\""}}},"clickEvent": {"action": "change_page","value": "28"}},
 		"\\u0022",
 		{"text": "\\u0021","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"custom_model_data": 2010021,"item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}"}}},"clickEvent": {"action": "change_page","value": "27"}},
-		{"text": "\\u0021\n","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"custom_model_data": 2010022,"item_name": "\"PythonDatapackSummit Manual\""}}},"clickEvent": {"action": "change_page","value": "28"}}
+		{"text": "\\u0021\n","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"custom_model_data": 2010025,"item_name": "\"Python Datapack example manual\""}}},"clickEvent": {"action": "change_page","value": "28"}}
 	],
 	[
 		{"text": "","font": "python_datapack_summit:manual","color": "white"},
@@ -628,9 +628,9 @@
 		{"text": "\\u002f\\u0024","hoverEvent": {"action": "show_item","contents": {"id": "minecraft:book"}}},
 		{"text": "\\u002f\\u0024","hoverEvent": {"action": "show_item","contents": {"id": "command_block","components": {"custom_model_data": 2010005,"item_name": "{'text': 'Steel Ingot', 'italic': false, 'color': 'white'}","lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"]}}},"clickEvent": {"action": "change_page","value": "11"}},
 		"\\u002f\\u0024",
-		{"text": "\\u0024\\u0024\\u804b","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"item_name": "\"PythonDatapackSummit Manual\"","custom_model_data": 2010022,"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"]}}}},
+		{"text": "\\u0024\\u0024\\u804b","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"item_name": "\"Python Datapack example manual\"","custom_model_data": 2010025,"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"]}}}},
 		"\n\\u0022\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024",
-		{"text": "\\u002f\\u0024\n\n\n","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"item_name": "\"PythonDatapackSummit Manual\"","custom_model_data": 2010022,"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"]}}}},
+		{"text": "\\u002f\\u0024\n\n\n","hoverEvent": {"action": "show_item","contents": {"id": "written_book","components": {"item_name": "\"Python Datapack example manual\"","custom_model_data": 2010025,"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"]}}}},
 		{"text": "\\u0027\\u0023\\u0023","hoverEvent": {"action": "show_text","contents": ["",[{"text": "","font": "python_datapack_summit:manual","color": "white"},"\\u0022\\u002c\n\\u0022\\u0024\\u809a\\u0024\\u8029\n\\u0022\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\\u0024\\u0024\\u804b\n\\u0022\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\n\n"],{"text": "\n- x1 Book\n- x1 Steel Ingot","color": "gray"}]}},
 		{"text": "\\u0027\n","hoverEvent": {"action": "show_text","contents": ["",[{"text": "","font": "python_datapack_summit:manual","color": "white"},"\\u0022\\u002c\n\\u0022\\u0024\\u804b\n\\u0022\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\\u0024\\u0024\\u804b\n\\u0022\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\n\n"],{"text": "\n- x1 Manual","color": "gray"}]}},
 		{"text": "\\u0025\\u0023\\u0023","hoverEvent": {"action": "show_text","contents": ["",[{"text": "","font": "python_datapack_summit:manual","color": "white"},"\\u0022\\u002c\n\\u0022\\u0024\\u809a\\u0024\\u8029\n\\u0022\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\\u0024\\u0024\\u804b\n\\u0022\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\\u002f\\u0024\n\n"],{"text": "\n- x1 Book\n- x1 Steel Ingot","color": "gray"}]}},

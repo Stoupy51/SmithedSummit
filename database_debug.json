@@ -225,17 +225,24 @@
 	},
 	"word_cloud": {
 		"id": "minecraft:command_block",
-		"custom_model_data": 2010023,
+		"custom_model_data": 2010022,
 		"item_name": "{'text': 'Word Cloud', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],
 		"custom_data": {"python_datapack_summit": {"word_cloud": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"word_cloud_background": {
 		"id": "minecraft:command_block",
-		"custom_model_data": 2010024,
+		"custom_model_data": 2010023,
 		"item_name": "{'text': 'Word Cloud Background', 'italic': false, 'color': 'white'}",
 		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],
 		"custom_data": {"python_datapack_summit": {"word_cloud_background": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
+	},
+	"stiched_texture": {
+		"id": "minecraft:command_block",
+		"custom_model_data": 2010024,
+		"item_name": "{'text': 'Stiched Texture', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],
+		"custom_data": {"python_datapack_summit": {"stiched_texture": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"manual": {
 		"id": "minecraft:written_book",
@@ -243,7 +250,16 @@
 		"item_name": "\"Python Datapack example manual\"",
 		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"item": "minecraft:book"},{"components": {"minecraft:custom_data": {"python_datapack_summit": {"steel_ingot": true}}}}]},{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"components": {"minecraft:custom_data": {"python_datapack_summit": {"manual": true}}}}]}],
 		"custom_data": {"python_datapack_summit": {"clear_on_exit": true,"manual": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
-		"custom_model_data": 2010022,
+		"custom_model_data": 2010025,
 		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"]
+	},
+	"electric_brewing_stand": {
+		"id": "minecraft:furnace",
+		"vanilla_block": {"id": "minecraft:brewing_stand","apply_facing": false},
+		"override_model": {"parent": "block/brewing_stand","textures": {"base": "python_datapack_summit:block/electric_brewing_stand_base","stand": "python_datapack_summit:block/electric_brewing_stand"},"display": {"gui": {"rotation": [30,225,0],"translation": [0,0,0],"scale": [0.625,0.625,0.625]},"ground": {"rotation": [0,0,0],"translation": [0,3,0],"scale": [0.25,0.25,0.25]},"fixed": {"rotation": [0,0,0],"translation": [0,0,0],"scale": [0.5,0.5,0.5]},"thirdperson_righthand": {"rotation": [75,45,0],"translation": [0,2.5,0],"scale": [0.375,0.375,0.375]},"firstperson_righthand": {"rotation": [0,45,0],"translation": [0,0,0],"scale": [0.4,0.4,0.4]},"firstperson_lefthand": {"rotation": [0,225,0],"translation": [0,0,0],"scale": [0.4,0.4,0.4]}}},
+		"custom_model_data": 2010026,
+		"item_name": "{'text': 'Electric Brewing Stand', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],
+		"custom_data": {"python_datapack_summit": {"electric_brewing_stand": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	}
 }

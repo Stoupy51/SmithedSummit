@@ -263,12 +263,6 @@ def main(config: dict) -> None:
 		},
 	}
 
-	# Kill the previous text displays
-	write_to_load_file(config, f"""
-# Remove the previous entities
-kill @e[tag={namespace}]
-""")
-
 	# Add the text displays
 	for entity_id, data in TEXT_DISPLAYS.items():
 		data = data.copy()

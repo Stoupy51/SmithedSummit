@@ -47,6 +47,7 @@ def main(config: dict) -> dict[str, dict]:
 	}
 	database["word_cloud"] = {"id": CUSTOM_ITEM_VANILLA}
 	database["word_cloud_background"] = {"id": CUSTOM_ITEM_VANILLA}
+	database["stiched_texture"] = {"id": CUSTOM_ITEM_VANILLA}
 
 	# Add a recipe for the future generated manual (the manual recipe will show up in itself)
 	database["manual"] = {
@@ -59,6 +60,18 @@ def main(config: dict) -> dict[str, dict]:
 			{"type":"crafting_shapeless","result_count":1,"group":"manual","category":"misc","ingredients": [ingr_repr("manual", namespace)]},
 		],
 		"custom_data": {namespace: {"clear_on_exit": True}},
+	}
+	database["electric_brewing_stand"] = {
+		"id": CUSTOM_BLOCK_VANILLA, VANILLA_BLOCK: {"id": "minecraft:brewing_stand", "apply_facing": False},
+		OVERRIDE_MODEL: {"parent":"block/brewing_stand","textures":{"base":f"{namespace}:block/electric_brewing_stand_base","stand":f"{namespace}:block/electric_brewing_stand"},
+		"display":{
+			"gui":{"rotation":[30,225,0],"translation":[0,0,0],"scale":[0.625,0.625,0.625]},
+			"ground":{"rotation":[0,0,0],"translation":[0,3,0],"scale":[0.25,0.25,0.25]},
+			"fixed":{"rotation":[0,0,0],"translation":[0,0,0],"scale":[0.5,0.5,0.5]},
+			"thirdperson_righthand":{"rotation":[75,45,0],"translation":[0,2.5,0],"scale":[0.375,0.375,0.375]},
+			"firstperson_righthand":{"rotation":[0,45,0],"translation":[0,0,0],"scale":[0.40,0.40,0.40]},
+			"firstperson_lefthand":{"rotation":[0,225,0],"translation":[0,0,0],"scale":[0.40,0.40,0.40]}
+		}}
 	}
 
 	# Final adjustments, you definitively should keep them!

@@ -21,7 +21,9 @@
 	"stone_rod": 2010020,
 	"none": 2010000,
 	"pendant": 2010021,
-	"manual": 2010022,
-	"word_cloud": 2010023,
-	"word_cloud_background": 2010024
+	"word_cloud": 2010022,
+	"word_cloud_background": 2010023,
+	"stiched_texture": 2010024,
+	"manual": 2010025,
+	"electric_brewing_stand": 2010026
 }

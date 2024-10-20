@@ -4,7 +4,8 @@
 		{ "predicate": { "custom_model_data": 2010001}, "model": "python_datapack_summit:block/steel_block" },
 		{ "predicate": { "custom_model_data": 2010002}, "model": "python_datapack_summit:block/steel_ore" },
 		{ "predicate": { "custom_model_data": 2010003}, "model": "python_datapack_summit:block/deepslate_steel_ore" },
-		{ "predicate": { "custom_model_data": 2010004}, "model": "python_datapack_summit:block/raw_steel_block" }
+		{ "predicate": { "custom_model_data": 2010004}, "model": "python_datapack_summit:block/raw_steel_block" },
+		{ "predicate": { "custom_model_data": 2010026}, "model": "python_datapack_summit:block/electric_brewing_stand" }
 	]
 }
 
