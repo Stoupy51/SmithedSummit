@@ -223,10 +223,24 @@
 		"item_name": "{'text': 'Pendant', 'italic': false, 'color': 'white'}",
 		"custom_data": {"python_datapack_summit": {"pendant": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
+	"word_cloud": {
+		"id": "minecraft:command_block",
+		"custom_model_data": 2010023,
+		"item_name": "{'text': 'Word Cloud', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],
+		"custom_data": {"python_datapack_summit": {"word_cloud": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
+	},
+	"word_cloud_background": {
+		"id": "minecraft:command_block",
+		"custom_model_data": 2010024,
+		"item_name": "{'text': 'Word Cloud Background', 'italic': false, 'color': 'white'}",
+		"lore": ["{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"],
+		"custom_data": {"python_datapack_summit": {"word_cloud_background": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
+	},
 	"manual": {
 		"id": "minecraft:written_book",
 		"category": "misc",
-		"item_name": "\"PythonDatapackSummit Manual\"",
+		"item_name": "\"Python Datapack example manual\"",
 		"result_of_crafting": [{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"item": "minecraft:book"},{"components": {"minecraft:custom_data": {"python_datapack_summit": {"steel_ingot": true}}}}]},{"type": "crafting_shapeless","result_count": 1,"group": "manual","category": "misc","ingredients": [{"components": {"minecraft:custom_data": {"python_datapack_summit": {"manual": true}}}}]}],
 		"custom_data": {"python_datapack_summit": {"clear_on_exit": true,"manual": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}},
 		"custom_model_data": 2010022,

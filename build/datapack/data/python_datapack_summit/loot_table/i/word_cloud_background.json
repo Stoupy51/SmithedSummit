@@ -1,0 +1,30 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:command_block",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 2010024,
+								"minecraft:item_name": "{'text': 'Word Cloud Background', 'italic': false, 'color': 'white'}",
+								"minecraft:lore": [
+									"{'text': 'Python Datapack', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:custom_data": {
+									"python_datapack_summit": {"word_cloud_background": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+

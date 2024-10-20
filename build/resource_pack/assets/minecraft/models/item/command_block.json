@@ -8,7 +8,9 @@
 		{ "predicate": { "custom_model_data": 2010009}, "model": "python_datapack_summit:item/steel_stick" },
 		{ "predicate": { "custom_model_data": 2010019}, "model": "python_datapack_summit:item/stone_stick" },
 		{ "predicate": { "custom_model_data": 2010020}, "model": "python_datapack_summit:item/stone_rod" },
-		{ "predicate": { "custom_model_data": 2010021}, "model": "python_datapack_summit:item/pendant" }
+		{ "predicate": { "custom_model_data": 2010021}, "model": "python_datapack_summit:item/pendant" },
+		{ "predicate": { "custom_model_data": 2010023}, "model": "python_datapack_summit:item/word_cloud" },
+		{ "predicate": { "custom_model_data": 2010024}, "model": "python_datapack_summit:item/word_cloud_background" }
 	]
 }
 

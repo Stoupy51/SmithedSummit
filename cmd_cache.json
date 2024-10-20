@@ -21,5 +21,7 @@
 	"stone_rod": 2010020,
 	"none": 2010000,
 	"pendant": 2010021,
-	"manual": 2010022
+	"manual": 2010022,
+	"word_cloud": 2010023,
+	"word_cloud_background": 2010024
 }

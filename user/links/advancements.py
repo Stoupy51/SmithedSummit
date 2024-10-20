@@ -47,6 +47,7 @@ def main(config: dict) -> None:
 	namespace: str = config["namespace"]
 	advancements_path: str = f"{config['build_datapack']}/data/{namespace}/advancement"
 
+
 	# Advancement when entering the booth
 	enter_booth: dict = json.loads(json.dumps(BASE_ADVANCEMENT))
 	enter_booth["rewards"]["function"] = f"{namespace}:advancements/enter_booth"
@@ -65,7 +66,8 @@ execute store result score @s {namespace}.block_interaction_range run attribute 
 # Modify player.block_interaction_range (to allow interaction with the lecterns and signs)
 attribute @s player.block_interaction_range base set 4.5
 """)
-	
+
+
 	# Advancement when exiting the booth
 	exit_booth: dict = json.loads(json.dumps(BASE_ADVANCEMENT))
 	first_player_condition: dict = exit_booth["criteria"]["requirement"]["conditions"]["player"][0].copy()
@@ -78,8 +80,9 @@ attribute @s player.block_interaction_range base set 4.5
 	del exit_booth["criteria"]["requirement"]["conditions"]["player"][0]["entity"]
 	write_to_file(f"{advancements_path}/exit_booth.json", super_json_dump(exit_booth, max_level=-1))
 	write_to_function(config, f"{namespace}:advancements/exit_booth", f"""
-# Revoke enter booth advancement and the temporary tag
+# Revoke enter booth advancement, get manual advancement, and the temporary tag
 advancement revoke @s only {namespace}:enter_booth
+advancement revoke @s only {namespace}:manual
 tag @s remove {namespace}.in_booth
 
 # Ignore non-adventure players
@@ -94,6 +97,7 @@ execute store result storage {namespace}:main input.value double 0.01 run scoreb
 function {namespace}:advancements/exit_booth_modify_range with storage {namespace}:main input
 """)
 	write_to_function(config, f"{namespace}:advancements/exit_booth_modify_range", f"$attribute @s player.block_interaction_range base set $(value)")
+
 
 	# Inventory changed advancement in the booth
 	inventory_changed: dict = json.loads(json.dumps(BASE_ADVANCEMENT))
@@ -112,6 +116,16 @@ execute if score #nb_pendants {namespace}.data matches 1.. run advancement grant
 # If more than 1 pendant, clear them
 execute if score #nb_pendants {namespace}.data matches 2.. run clear @s *[custom_data~{{{namespace}:{{pendant:1b}}}}] 1
 """)
+	
+	# Give a manual to the player
+	manual: dict = json.loads(json.dumps(BASE_ADVANCEMENT))
+	manual["criteria"]["requirement"]["conditions"]["player"][0]["predicate"]["location"]["position"] = {
+		"x": {"min": 124,	"max": 127},
+		"y": {"min": 72,	"max": 76},
+		"z": {"min": -128,	"max": -125},
+	}
+	manual["rewards"] = {"loot": [f"{namespace}:i/manual"]}
+	write_to_file(f"{advancements_path}/manual.json", super_json_dump(manual, max_level=-1))
 
 	pass
 

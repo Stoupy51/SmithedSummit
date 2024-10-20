@@ -42,14 +42,15 @@ def main(config: dict) -> dict[str, dict]:
 	# Add a few items
 	database["none"] = {"id": "minecraft:bread", OVERRIDE_MODEL: {}, "custom_model_data": 2010000}	# Custom model data in golf ball datapack
 	database["pendant"] = {
-		"id":CUSTOM_ITEM_VANILLA, "category":"misc", "max_stack_size":1, "lore":['{"text":"Immunity idol","color":"gold","italic":false}'],
+		"id": CUSTOM_ITEM_VANILLA, "category":"misc", "max_stack_size":1, "lore":['{"text":"Immunity idol","color":"gold","italic":false}'],
 		WIKI_COMPONENTS: [{"text":"This pendent is a hidden immunity idol.\nFind it to get the booth stamp!","color":"gray"}],
 	}
+	database["word_cloud"] = {"id": CUSTOM_ITEM_VANILLA}
+	database["word_cloud_background"] = {"id": CUSTOM_ITEM_VANILLA}
 
 	# Add a recipe for the future generated manual (the manual recipe will show up in itself)
-	manual_name: str = config.get("manual_name", "Manual")
 	database["manual"] = {
-		"id": "minecraft:written_book", "category": "misc", "item_name": f'"{manual_name}"',
+		"id": "minecraft:written_book", "category": "misc", "item_name": f'"Python Datapack example manual"',
 		RESULT_OF_CRAFTING: [
 			# Put a book and a steel ingot in the crafting grid to get the manual
 			{"type":"crafting_shapeless","result_count":1,"group":"manual","category":"misc","ingredients": [ingr_repr("minecraft:book"), ingr_repr("steel_ingot", namespace)]},

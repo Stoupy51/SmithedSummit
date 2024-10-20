@@ -4,8 +4,9 @@
 # @within	advancement python_datapack_summit:exit_booth
 #
 
-# Revoke enter booth advancement and the temporary tag
+# Revoke enter booth advancement, get manual advancement, and the temporary tag
 advancement revoke @s only python_datapack_summit:enter_booth
+advancement revoke @s only python_datapack_summit:manual
 tag @s remove python_datapack_summit.in_booth
 
 # Ignore non-adventure players

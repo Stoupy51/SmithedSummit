@@ -12,6 +12,7 @@ CUSTOM_FONTS: dict[str,str] = {
 
 # Main function to place the text displays
 def main(config: dict) -> None:
+	database: dict[str, dict] = config["database"]
 	namespace: str = config["namespace"]
 	assets_folder: str = config["assets_folder"]
 
@@ -187,8 +188,50 @@ def main(config: dict) -> None:
 			"background": 0,
 			"billboard": "vertical",
 			"alignment": "center",
-		}
+		},
+
+		# Python Datapack
+		"python_datapack": {
+			"position": [127, 74, -127],
+			"text": [
+				{"text":"","color":"aqua"},
+				{"text":"[Python Datapack]\\n","color":"gold"},
+				"With the introduction of Minecraft 1.20.5, lots of datapacks were broken.",
+				{"text":"\\n"},
+				"This is why I created ",
+				{"text":"Python Datapack","color":"green"},
+				". An open-source tool with the objective to make the creation of ",
+				{"text":"extensive","color":"yellow"},
+				" datapacks easier and faster through sort-of ",
+				{"text":"data-driven","color":"yellow"},
+				" development.",
+				{"text":"\\n"},
+				"Put textures in a folder, define items/blocks and recipes in a python file, and run the script to generate the datapack.",
+				{"text":"\\n\\n"},
+				"Python Datapack is brought to you as a ",
+				{"text":"Python package","color":"yellow"},
+				" and a ",
+				{"text":"Template","color":"yellow"},
+				". It includes a lot of features (see the word cloud on your right), tutorials, and examples.",
+				{"text":"\\n\\n"},
+				{"text":"At this date, every single project of mine is made with Python Datapack (like SimplEnergy, Switch minigames, Survisland), including this booth!","color":"green"},
+				{"text":"\\n\\n"},
+				"The most impressive in my opinion is the automatic generation of an interactive in-game manual, get one by moving close to this text display!",
+			],
+			"billboard": "fixed",
+			"alignment": "left",
+			"line_width": 275,
+			"background": 1962934272,
+			"Rotation": [90.0, 0.0],
+			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.5f,0.5f,0.0f],scale:[0.55f,0.55f,0.55f]}"
+		},
 	}
+
+	# Kill the previous text displays
+	write_to_load_file(config, f"""
+# Remove the previous entities
+kill @e[tag={namespace}]
+""")
 
 	# Add the text displays
 	for entity_id, data in TEXT_DISPLAYS.items():
@@ -208,14 +251,17 @@ def main(config: dict) -> None:
 		# Write in load file the kill and summon commands
 		write_to_load_file(config, f"""
 # Display the text "{entity_id}"
-kill @e[tag={namespace}.{entity_id},tag={namespace}]
 summon text_display {x} {y} {z} {{"Tags":["{namespace}.{entity_id}", "{namespace}"],"text":'{text}'{remaining_string}}}
 """)
 	
 	# Remaining text displays
+	word_cloud: dict = database["word_cloud"]
+	word_cloud_background: int = database["word_cloud_background"]["custom_model_data"]
 	write_to_load_file(config, f"""
 # Remaining text displays
 function {namespace}:minigolf/display
+summon item_display 124 75 -124 {{Rotation:[-45.0f,0.0f],transformation:{{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,-0.25f,0.0f],scale:[2.0f,2.0f,0.5f]}},Tags:["{namespace}.word_cloud","{namespace}"],item:{{id:"{word_cloud["id"]}",components:{{"minecraft:custom_model_data":{word_cloud["custom_model_data"]}}}}}}}
+summon item_display 124 75 -124 {{Rotation:[-45.0f,0.0f],transformation:{{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,-0.25f,0.0f],scale:[2.0f,2.0f,0.1f]}},Tags:["{namespace}.word_cloud_background","{namespace}"],item:{{id:"{word_cloud["id"]}",components:{{"minecraft:custom_model_data":{word_cloud_background}}}}}}}
 """)
 	
 	# Add convention tags to the entities
