@@ -14,6 +14,7 @@ scoreboard players set #default_do_collision golf_ball.data 0
 # Reset scores
 scoreboard players set @s golf_ball.shots 0
 scoreboard players set @s golf_ball.cooldown 0
+scoreboard players operation @s python_datapack_summit.minigolf_time = #total_ticks python_datapack_summit.data
 
 # Summon the golf ball
 execute at @s run function golf_ball:summon

@@ -22,6 +22,7 @@ scoreboard players set #{namespace}.loaded load.status 1
 
 # New objectives
 scoreboard objectives add {namespace}.block_interaction_range dummy
+scoreboard objectives add {namespace}.minigolf_time dummy
 """, True)
 
 	# Disable every libraries

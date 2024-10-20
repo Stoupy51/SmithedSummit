@@ -145,6 +145,12 @@ kill @e[tag={namespace}.{entity_id},tag={namespace}]
 summon text_display {x} {y} {z} {{"Tags":["{namespace}.{entity_id}", "{namespace}"],"text":'{text}'{remaining_string}}}
 """)
 	
+	# Remaining text displays
+	write_to_load_file(config, f"""
+# Remaining text displays
+function {namespace}:minigolf/display
+""")
+	
 	# Add convention tags to the entities
 	for tag in CONVENTION_TAGS:
 		write_to_load_file(config, f"tag @e[tag={namespace}] add {tag}\n")

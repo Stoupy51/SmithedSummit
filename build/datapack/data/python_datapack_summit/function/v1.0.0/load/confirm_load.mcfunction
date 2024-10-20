@@ -9,6 +9,7 @@ scoreboard players set #python_datapack_summit.loaded load.status 1
 
 # New objectives
 scoreboard objectives add python_datapack_summit.block_interaction_range dummy
+scoreboard objectives add python_datapack_summit.minigolf_time dummy
 
 # Display the text "welcoming_1"
 kill @e[tag=python_datapack_summit.welcoming_1,tag=python_datapack_summit]
@@ -29,6 +30,9 @@ summon text_display 119 76 -131 {"Tags":["python_datapack_summit.special_thanks"
 # Display the text "switch_minigames_1"
 kill @e[tag=python_datapack_summit.switch_minigames_1,tag=python_datapack_summit]
 summon text_display 120 80 -127 {"Tags":["python_datapack_summit.switch_minigames_1", "python_datapack_summit"],"text":'[{"text": "", "color": "aqua"}, "Switch minigames is a ", {"text": "democratic", "color": "green"}, " Minecraft server (started on August 23, 2022) like a infinite party-games", " where players can vote between ", {"text": "5 randomly selected minigames", "color": "green"}, " to play.", {"text": "\\n\\n"}, "Today, a total of ", {"text": "44 minigames", "color": "green"}, " are available.", {"text": "\\n"}, "The initial goal was an infinite amount of minigames.", {"text": "\\n"}, "A lot of the minigames are already popular so it is very likely that you already know them. For instance:", {"text": "\\nTNT Run, Kart Racer, SheepWars, Infected, Minigolf...", "color": "yellow"}, {"text": "\\n\\n"}, "The Switch minigames could be seen as a collection of the best minigames in my opinion.", {"text": "\\n"}, "Switch minigames ", {"text": "v2.0", "color": "green"}, " is currently in development and will be released around ", {"text": "December 2024.", "color": "green"}, {"text": "\\n"}, "Feel free to join the discord server (with the left sign) to get more information about the server and the upcoming update.", {"text": "\\n"}, {"text": "I highly recommend you to watch the short video with the sign on the right!", "color": "yellow"}]', Rotation:[90.0f,0.0f], transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.5f,0.15f,-0.45f],scale:[0.55f,0.55f,0.55f]}, "billboard": "fixed", "alignment": "left", "line_width": 275, "background": 1962934272}
+
+# Remaining text displays
+function python_datapack_summit:minigolf/display
 tag @e[tag=python_datapack_summit] add smithed.entity
 tag @e[tag=python_datapack_summit] add smithed.strict
 tag @e[tag=python_datapack_summit] add global.ignore
