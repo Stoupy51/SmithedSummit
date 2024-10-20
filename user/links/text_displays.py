@@ -8,6 +8,7 @@ CUSTOM_FONTS: dict[str,str] = {
 	"icon": r"\u1000",
 	"switch_icon": r"\u1001",
 	"survisland_icon": r"\u1002",
+	"simplenergy_icon": r"\u1003",
 }
 
 # Main function to place the text displays
@@ -22,11 +23,13 @@ def main(config: dict) -> None:
 			{"type":"bitmap","file":"python_datapack_summit:text_display/icon.png",				"ascent":10,"height":64,"chars":[CUSTOM_FONTS["icon"]]},
 			{"type":"bitmap","file":"python_datapack_summit:text_display/switch_icon.png",		"ascent":10,"height":64,"chars":[CUSTOM_FONTS["switch_icon"]]},
 			{"type":"bitmap","file":"python_datapack_summit:text_display/survisland_icon.png",	"ascent":10,"height":64,"chars":[CUSTOM_FONTS["survisland_icon"]]},
+			{"type":"bitmap","file":"python_datapack_summit:text_display/simplenergy_icon.png",	"ascent":10,"height":64,"chars":[CUSTOM_FONTS["simplenergy_icon"]]},
 		]
 	}).replace("\\\\", "\\"))
 	super_copy(f"{assets_folder}/original_icon.png", f"{config['build_resource_pack']}/assets/{namespace}/textures/text_display/icon.png")
 	super_copy(f"{assets_folder}/switch_icon.png", f"{config['build_resource_pack']}/assets/{namespace}/textures/text_display/switch_icon.png")
 	super_copy(f"{assets_folder}/survisland_icon.png", f"{config['build_resource_pack']}/assets/{namespace}/textures/text_display/survisland_icon.png")
+	super_copy(f"{assets_folder}/simplenergy_icon.png", f"{config['build_resource_pack']}/assets/{namespace}/textures/text_display/simplenergy_icon.png")
 
 	# Text displays
 	TEXT_DISPLAYS: dict[str, dict] = {
@@ -224,6 +227,39 @@ def main(config: dict) -> None:
 			"background": 1962934272,
 			"Rotation": [90.0, 0.0],
 			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.5f,0.5f,0.0f],scale:[0.55f,0.55f,0.55f]}"
+		},
+
+		# SimplEnergy
+		"simplenergy": {
+			"position": [120, 70, -127],
+			"text": [
+				{"text":"","color":"aqua"},
+				{"text":"[SimplEnergy]\\n","color":"gold"},
+				"This is a simple technology datapack that adds an energy system.",
+				{"text":"\\n"},
+				"Players can generate energy, store it, and use it to power machines.",
+				{"text":"\\n\\n"},
+				"You may have seen the ",
+				{"text":"Mechanization","color":"green"},
+				" booth (made by ICY) around spawn, it is fully compatible with SimplEnergy as we use the same energy system brought by ",
+				{"text":"Datapack Energy","color":"green"},
+				"."
+			],
+			"billboard": "vertical",
+			"alignment": "left",
+			"line_width": 200,
+			"background": 1962934272,
+			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.5f,0.0f,0.0f],scale:[0.6f,0.6f,0.6f]}"
+		},
+		"simplenergy_icon": {
+			"position": [120, 69.5, -127],
+			"text": [
+				{"text":CUSTOM_FONTS["simplenergy_icon"],"color":"white","font":f"{namespace}:text_display"},
+			],
+			"background": 0,
+			"billboard": "vertical",
+			"alignment": "center",
+			"transformation": "{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.46f,0.0f,0.0f],scale:[1.0f,1.0f,1.0f]}"
 		},
 	}
 

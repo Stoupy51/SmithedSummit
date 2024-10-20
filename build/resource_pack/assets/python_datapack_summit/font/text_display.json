@@ -2,7 +2,8 @@
 	"providers": [
 		{"type": "bitmap","file": "python_datapack_summit:text_display/icon.png","ascent": 10,"height": 64,"chars": ["\u1000"]},
 		{"type": "bitmap","file": "python_datapack_summit:text_display/switch_icon.png","ascent": 10,"height": 64,"chars": ["\u1001"]},
-		{"type": "bitmap","file": "python_datapack_summit:text_display/survisland_icon.png","ascent": 10,"height": 64,"chars": ["\u1002"]}
+		{"type": "bitmap","file": "python_datapack_summit:text_display/survisland_icon.png","ascent": 10,"height": 64,"chars": ["\u1002"]},
+		{"type": "bitmap","file": "python_datapack_summit:text_display/simplenergy_icon.png","ascent": 10,"height": 64,"chars": ["\u1003"]}
 	]
 }
 
