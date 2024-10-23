@@ -18,8 +18,19 @@ def main(config: dict) -> None:
 
 	# Make the start function (teleport, summon, and give the item)
 	write_to_function(config, f"{namespace}:minigolf/start", f"""
+# Stop if the offhand and latest hotbar slot are not empty
+scoreboard players set #is_empty {namespace}.data 1
+execute if score #is_empty {namespace}.data matches 1 if items entity @s weapon.offhand * run scoreboard players set #is_empty {namespace}.data 0
+execute if score #is_empty {namespace}.data matches 1 if items entity @s hotbar.8 * run scoreboard players set #is_empty {namespace}.data 0
+execute if score #is_empty {namespace}.data matches 0 run tellraw @s ["",{{"text":"[Python Datapack]","color":"gold"}},{{"text":" Please clear your offhand and last hotbar slot before starting the minigolf course.","color":"yellow"}}]
+execute if score #is_empty {namespace}.data matches 0 run playsound entity.villager.no
+execute if score #is_empty {namespace}.data matches 0 run return 1
+
 # Teleport the player to the start of the minigolf course
 tp @s {START_COORDS}
+
+# Grant booth stamp
+advancement grant @s only smithed_passport:visit_booth/python_datapack
 
 # Change default summon values
 scoreboard players set #default_do_y_shots golf_ball.data 1

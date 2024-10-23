@@ -85,6 +85,9 @@ advancement revoke @s only {namespace}:enter_booth
 advancement revoke @s only {namespace}:manual
 tag @s remove {namespace}.in_booth
 
+# If riding a golf ball, exit it
+execute on vehicle if entity @s[tag=golf_ball.base] on passengers if entity @s[type=player] run function golf_ball:ball/exit_player
+
 # Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 

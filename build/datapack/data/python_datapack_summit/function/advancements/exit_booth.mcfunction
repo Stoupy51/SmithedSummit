@@ -9,6 +9,9 @@ advancement revoke @s only python_datapack_summit:enter_booth
 advancement revoke @s only python_datapack_summit:manual
 tag @s remove python_datapack_summit.in_booth
 
+# If riding a golf ball, exit it
+execute on vehicle if entity @s[tag=golf_ball.base] on passengers if entity @s[type=player] run function golf_ball:ball/exit_player
+
 # Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 

@@ -69,7 +69,7 @@ def main(config: dict) -> None:
 
 				{"text":"\\n- Second way: head to the "},
 				{"text":"garden","color":"green"},
-				{"text":" and find the cave entrance. You need to complete the "},
+				{"text":" and find the cave entrance. You need to start at least one "},
 				{"text":"mini-golf course","color":"green"},
 				{"text":" to obtain the stamp."},
 			],

@@ -11,6 +11,7 @@ from user.links.simplenergy import main as simplenergy_main
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
 def main(config: dict) -> None:
 	namespace: str = config["namespace"]
+	version: str = config["version"]
 
 	# Remove clocks
 	for clock in ["tick","tick_2","second","second_5","minute"]:
@@ -18,6 +19,16 @@ def main(config: dict) -> None:
 	
 	# Remove items storage
 	write_to_load_file(config, f"""
+# If the chunks are not loaded, schedule in 10s and return
+scoreboard players set #zone_loaded python_datapack_summit.data 1
+execute unless loaded 128 69 -128 run scoreboard players set #zone_loaded python_datapack_summit.data 0
+execute unless loaded 128 69 -129 run scoreboard players set #zone_loaded python_datapack_summit.data 0
+execute unless loaded 127 100 -129 run scoreboard players set #zone_loaded python_datapack_summit.data 0
+execute unless loaded 127 100 -128 run scoreboard players set #zone_loaded python_datapack_summit.data 0
+execute if score #zone_loaded python_datapack_summit.data matches 0 run schedule function python_datapack_summit:v{version}/load/confirm_load 10s
+execute if score #zone_loaded python_datapack_summit.data matches 0 run return 1
+
+# Load the datapack
 tellraw @a[tag=convention.debug] {{"text":"[Loaded PythonDatapackSummit v1.0.0]","color":"green"}}
 scoreboard players set #{namespace}.loaded load.status 1
 
