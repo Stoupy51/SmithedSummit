@@ -4,7 +4,7 @@ from python_datapack.utils.io import *
 START_COORDS = "132 61 -121 90 0"
 RANKING_SIZE: int = 25
 DEFAULT_RANKING = [
-	{"name": "Unknown", "score": 2024, "time": 0.0, "time_str": "0.0"},
+	{"name": "Unknown", "score": 2024, "time": 4.2, "time_str": "4.2"},
 ] * RANKING_SIZE
 
 # Main function to place the text displays
@@ -125,6 +125,11 @@ $execute if score @s {namespace}.minigolf_time matches 20000..199999 run data mo
 
 	# Sort database function
 	write_to_function(config, f"{namespace}:minigolf/sort_database/main", f"""
+# Remove invalid scores
+data remove storage {namespace}:minigolf ranking[{{time_str:"0.0"}}]
+data remove storage {namespace}:minigolf ranking[{{time:0.0d}}]
+data remove storage {namespace}:minigolf ranking[{{score:0}}]
+
 # Copy the database
 data modify storage {namespace}:minigolf ranking_copy set from storage {namespace}:minigolf ranking
 
