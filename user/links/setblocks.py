@@ -20,6 +20,7 @@ setblock 126 74 -128 air
 setblock 119 80 -129 air
 setblock 119 80 -124 air
 setblock 133 62 -122 air
+setblock 133 61 -122 air
 
 # Set the lecterns
 setblock 119 74 -131 lectern[facing=south,has_book=true]{Book:{components:{"minecraft:written_book_content":{author:"",pages:[{raw:'{"color":"#0F5C00","extra":[{"color":"dark_aqua","text":"[Booth Plan]"},"\\n\\n- Floor 1:",{"color":"dark_green","text":"\\nPython Datapack explanation"},"\\n- Floor 2:",{"color":"dark_green","text":"\\nSwitch minigames"},"\\n- Floor -1:",{"color":"dark_green","text":"\\nSimplEnergy showcase"},"\\n- Garden and cave:",{"color":"dark_green","text":"\\nSurvisland"},"\\n- Deep Cave:",{"color":"dark_green","text":"\\nMinigolf course"}],"text":""}'}],resolved:1b,title:{raw:""}}},count:1,id:"minecraft:written_book"},Page:0}
@@ -34,6 +35,7 @@ setblock 126 74 -128 oak_wall_sign[facing=south]{front_text:{color:"red",has_glo
 setblock 119 80 -129 oak_sign[rotation=1]{front_text:{color:"blue",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"/tellraw @s {\\"text\\":\\"Join the Switch minigames discord by clicking here!\\",\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"open_url\\",\\"value\\":\\"https://discord.gg/anxzu6rA9F\\"}}"},"color":"blue","text":"Join the discord"}','{"color":"blue","text":"server here","clickEvent":{"action":"run_command","value":"/playsound ui.button.click"}}','""']},is_waxed:1b}
 setblock 119 80 -124 oak_sign[rotation=7]{front_text:{color:"red",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"/tellraw @s {\\"text\\":\\"Watch Switch Memories by clicking here!\\",\\"color\\":\\"red\\",\\"clickEvent\\":{\\"action\\":\\"open_url\\",\\"value\\":\\"https://www.youtube.com/watch?v=cB27sEOxboA\\"}}"},"color":"red","text":"Watch the short"}','{"color":"red","text":"video here","clickEvent":{"action":"run_command","value":"/playsound ui.button.click"}}','""']},is_waxed:1b}
 setblock 133 62 -122 spruce_wall_sign[facing=south]{front_text:{messages:['{"text":"[Mini-Golf]","color":"aqua"}','{"text":"Start the course","color":"yellow"}','{"text":"by clicking here","color":"yellow","clickEvent":{"action":"run_command","value":"/function python_datapack_summit:minigolf/start"}}','{"text":""}']}} replace
+setblock 133 61 -122 spruce_wall_sign[facing=south]{front_text:{messages:['{"text":"Disclaimer:","color":"aqua"}','{"text":"Your first","color":"yellow"}','{"text":"score might","color":"yellow"}','{"text":"not register","color":"yellow"}']}} replace
 """.replace("\\","\\\\"))
 
 	# Every second, place the hidden pendant
