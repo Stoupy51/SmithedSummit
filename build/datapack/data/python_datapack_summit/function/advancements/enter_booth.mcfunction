@@ -11,9 +11,9 @@ tag @s add python_datapack_summit.in_booth
 # Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 
-# Remember previous player.block_interaction_range
-execute store result score @s python_datapack_summit.block_interaction_range run attribute @s player.block_interaction_range base get 100
+# Remember previous block_interaction_range
+execute store result score @s python_datapack_summit.block_interaction_range run attribute @s block_interaction_range base get 100
 
-# Modify player.block_interaction_range (to allow interaction with the lecterns and signs)
-attribute @s player.block_interaction_range base set 4.5
+# Modify block_interaction_range (to allow interaction with the lecterns and signs)
+attribute @s block_interaction_range base set 4.5
 

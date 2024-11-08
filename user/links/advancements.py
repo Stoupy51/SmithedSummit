@@ -60,11 +60,11 @@ tag @s add {namespace}.in_booth
 # Ignore non-adventure players
 execute unless entity @s[gamemode=adventure] run return 1
 
-# Remember previous player.block_interaction_range
-execute store result score @s {namespace}.block_interaction_range run attribute @s player.block_interaction_range base get 100
+# Remember previous block_interaction_range
+execute store result score @s {namespace}.block_interaction_range run attribute @s block_interaction_range base get 100
 
-# Modify player.block_interaction_range (to allow interaction with the lecterns and signs)
-attribute @s player.block_interaction_range base set 4.5
+# Modify block_interaction_range (to allow interaction with the lecterns and signs)
+attribute @s block_interaction_range base set 4.5
 """)
 
 
@@ -94,12 +94,12 @@ execute unless entity @s[gamemode=adventure] run return 1
 # Clear some items
 clear @s *[custom_data~{{"{namespace}":{{"clear_on_exit":true}}}}]
 
-# Modify player.block_interaction_range back to default
+# Modify block_interaction_range back to default
 data modify storage {namespace}:main input set value {{"value":0.0}}
 execute store result storage {namespace}:main input.value double 0.01 run scoreboard players get @s {namespace}.block_interaction_range
 function {namespace}:advancements/exit_booth_modify_range with storage {namespace}:main input
 """)
-	write_to_function(config, f"{namespace}:advancements/exit_booth_modify_range", f"$attribute @s player.block_interaction_range base set $(value)")
+	write_to_function(config, f"{namespace}:advancements/exit_booth_modify_range", f"$attribute @s block_interaction_range base set $(value)")
 
 
 	# Inventory changed advancement in the booth
