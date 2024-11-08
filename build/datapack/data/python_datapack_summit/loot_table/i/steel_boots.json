@@ -20,7 +20,7 @@
 								},
 								"minecraft:max_damage": 585,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 2.5,"operation": "add_value","slot": "feet","id": "python_datapack_summit:generic.armor.feet"}
+									{"type": "armor","amount": 2.5,"operation": "add_value","slot": "feet","id": "python_datapack_summit:armor.feet"}
 								],
 								"minecraft:custom_model_data": 2010013,
 								"minecraft:item_name": "{'text': 'Steel Boots', 'italic': false, 'color': 'white'}",

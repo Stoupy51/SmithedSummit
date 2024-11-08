@@ -16,9 +16,9 @@
 								},
 								"minecraft:max_damage": 750,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.attack_damage","amount": 2,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:generic.attack_damage.mainhand"},
-									{"type": "generic.attack_speed","amount": -1.0,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:generic.attack_speed.mainhand"},
-									{"type": "player.mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:player.mining_efficiency.mainhand"}
+									{"type": "attack_damage","amount": 2,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:attack_damage.mainhand"},
+									{"type": "attack_speed","amount": -1.0,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:attack_speed.mainhand"},
+									{"type": "mining_efficiency","amount": 0.2,"operation": "add_value","slot": "mainhand","id": "python_datapack_summit:mining_efficiency.mainhand"}
 								],
 								"minecraft:custom_model_data": 2010018,
 								"minecraft:item_name": "{'text': 'Steel Hoe', 'italic': false, 'color': 'white'}",

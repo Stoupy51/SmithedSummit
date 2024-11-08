@@ -17,7 +17,7 @@ ORES_CONFIGS: dict[str, EquipmentsConfig|None] = {
 		pickaxe_durability = 3 * VanillaEquipments.PICKAXE.value[DEFAULT_ORE.IRON]["durability"],
 
 		# And, does 1 more damage per hit (mainhand), and has 0.5 more armor, and mines 20% faster (pickaxe)
-		attributes = {"generic.attack_damage": 1, "generic.armor": 0.5, "player.mining_efficiency": 0.2}
+		attributes = {"attack_damage": 1, "armor": 0.5, "mining_efficiency": 0.2}
 	),
 
 	# Simple material stone, this will automatically detect stone stick and rod textures.

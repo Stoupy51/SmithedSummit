@@ -24,10 +24,10 @@ MERGE_LIBS: bool = True								# Make new zip of merged libraries with the datap
 
 # Datapack related constants
 AUTHOR: str = "Stoupy51"				# Author(s) name(s) displayed in pack.mcmeta, also used to add convention.debug tag to the players of the same name(s) <-- showing additionnal displays like datapack loading
-DATAPACK_NAME: str = "PythonDatapackSummit"			# Name of the datapack, used for messages and items lore
+PROJECT_NAME: str = "PythonDatapackSummit"			# Name of the datapack, used for messages and items lore
 VERSION: str = "1.0.0"					# Datapack version in the following mandatory format: major.minor.patch, ex: 1.0.0 or 1.21.615
 NAMESPACE: str = "python_datapack_summit"		# Simplified version of the datapack name. Should be the same you use in the merge folder. Used to namespace functions, tags, etc.
-DESCRIPTION = f"{DATAPACK_NAME} [{VERSION}] by {AUTHOR}"	# Pack description displayed in pack.mcmeta
+DESCRIPTION = f"{PROJECT_NAME} [{VERSION}] by {AUTHOR}"	# Pack description displayed in pack.mcmeta
 DEPENDENCIES: dict[str, dict[str, list[int] | str]] = {}
 
 
@@ -42,7 +42,7 @@ MANUAL_HIGH_RESOLUTION: bool = False					# Enable the high resolution for the ma
 CACHE_MANUAL_ASSETS: bool = True					# Caches the MC assets and the items renders for the manual (manual/items/*.png)
 CACHE_MANUAL_PAGES: bool = True						# Caches the content of the manual and the images (manual/pages/*.png)
 MANUAL_DEBUG: str = f"{ROOT}/debug_manual.json"		# Dump of the manual for debugging purposes
-MANUAL_NAME: str = f"{DATAPACK_NAME} Manual"		# Name of the manual, used for the title of the book and first page
+MANUAL_NAME: str = f"{PROJECT_NAME} Manual"		# Name of the manual, used for the title of the book and first page
 MAX_ITEMS_PER_ROW: int = 5							# Max number of items per row in the manual, should not exceed 6
 MAX_ROWS_PER_PAGE: int = 5							# Max number of rows per page in the manual, should not exceed 6
 OPENGL_RESOLUTION: int = 256						# Resolution of the OpenGL renders used in the manual, best value is 256 <--- 256x256
@@ -72,7 +72,7 @@ configuration = {
 	"enable_translations": ENABLE_TRANSLATIONS,
 	"merge_libs": MERGE_LIBS,
 	"author": AUTHOR,
-	"datapack_name": DATAPACK_NAME,
+	"project_name": PROJECT_NAME,
 	"version": VERSION,
 	"namespace": NAMESPACE,
 	"manual_name": MANUAL_NAME,

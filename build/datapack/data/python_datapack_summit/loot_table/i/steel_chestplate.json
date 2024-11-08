@@ -20,7 +20,7 @@
 								},
 								"minecraft:max_damage": 720,
 								"minecraft:attribute_modifiers": [
-									{"type": "generic.armor","amount": 6.5,"operation": "add_value","slot": "chest","id": "python_datapack_summit:generic.armor.chest"}
+									{"type": "armor","amount": 6.5,"operation": "add_value","slot": "chest","id": "python_datapack_summit:armor.chest"}
 								],
 								"minecraft:custom_model_data": 2010011,
 								"minecraft:item_name": "{'text': 'Steel Chestplate', 'italic': false, 'color': 'white'}",
